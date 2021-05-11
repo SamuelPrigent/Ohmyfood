@@ -73,18 +73,16 @@ footer {
 .bloc {
   height: 100px;
   flex: 1;
-}
 
-.bloc--red {
-  background-color: red;
-}
-
-.bloc--blue {
-  background-color: blue;
-}
-
-.bloc--green {
-  background-color: green;
+  .bloc--red {
+    background-color: red;
+  }
+  .bloc--blue {
+    background-color: blue;
+  }
+  .bloc--green {
+    background-color: green;
+  }
 }
 
 .nav {
@@ -94,8 +92,8 @@ footer {
   width: 80%;
   font-size: 1.5rem;
   gap: 30px;
-}
 
-.nav--blue {
-  color: blue;
+  .nav--blue {
+    color: blue;
+  }
 }
