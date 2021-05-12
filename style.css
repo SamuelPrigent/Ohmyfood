@@ -6,6 +6,10 @@
   --tertiaire: #99e2d0;
 }
 
+.test {
+  background-color: var(--primaire);
+}
+
 /*
 Font 
 Title "Shrikhand"
