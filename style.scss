@@ -1,13 +1,14 @@
 /* Mon fichier CSS */
 
 :root {
-  $primaire: #9356dc;
-  $secondaire: #ff79da;
-  $tertiaire: #99e2d0;
+  --primaire: #9356dc;
+  --secondaire: #ff79da;
+  --tertiaire: #99e2d0;
+  --quatre: red;
 }
 
 .test {
-  background-color: $primaire;
+  background-color: var(--primaire);
 }
 
 /*
@@ -77,6 +78,7 @@ footer {
 .bloc {
   height: 100px;
   flex: 1;
+  border: 2px solid black;
 
   .bloc--red {
     background-color: red;
@@ -92,7 +94,6 @@ footer {
 .nav {
   margin: 40px auto 40px;
   display: flex;
-  justify-content: right;
   width: 80%;
   font-size: 1.5rem;
   gap: 30px;

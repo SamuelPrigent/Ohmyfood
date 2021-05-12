@@ -1,5 +1,4 @@
 /* Mon fichier CSS */
-
 :root {
   --primaire: #9356dc;
   --secondaire: #ff79da;
@@ -16,7 +15,6 @@ Font
 Title "Shrikhand"
 All "Roboto"
 */
-
 /* modificateur unique */
 .reset-button {
   border: none;
@@ -78,27 +76,27 @@ footer {
 .bloc {
   height: 100px;
   flex: 1;
+  border: 2px solid black;
 }
-
-.bloc--red {
+.bloc .bloc--red {
   background-color: red;
 }
-.bloc--blue {
+.bloc .bloc--blue {
   background-color: blue;
 }
-.bloc--green {
+.bloc .bloc--green {
   background-color: green;
 }
 
 .nav {
   margin: 40px auto 40px;
   display: flex;
-  justify-content: right;
   width: 80%;
   font-size: 1.5rem;
   gap: 30px;
 }
-
-.nav--blue {
+.nav .nav--blue {
   color: blue;
 }
+
+/*# sourceMappingURL=style.css.map */
