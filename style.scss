@@ -82,27 +82,28 @@ footer {
   height: 100px;
   flex: 1;
   border: 1px solid black;
+  background-color: yellow;
 
   &--red {
     background-color: #ff0000;
     &:hover {
-      background-color: #bb0000;
+      background-color: #ce0000;
     }
   }
-
   &--blue {
     background-color: blue;
     &:hover {
-      background-color: #0003b9;
+      background-color: #0003c7;
     }
   }
   &--purple {
     background-color: rgb(188, 0, 235);
     &:hover {
-      background-color: #9c00a1;
+      background-color: #9200b6;
     }
   }
 }
+
 .nav {
   margin: 40px auto 40px;
   display: flex;
@@ -110,7 +111,7 @@ footer {
   font-size: 1.5rem;
   gap: 30px;
 
-  .nav--blue {
+  &--blue {
     color: blue;
   }
 }

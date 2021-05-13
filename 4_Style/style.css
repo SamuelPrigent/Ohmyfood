@@ -80,24 +80,25 @@ footer {
   height: 100px;
   flex: 1;
   border: 1px solid black;
+  background-color: yellow;
 }
 .bloc--red {
   background-color: #ff0000;
 }
 .bloc--red:hover {
-  background-color: #bb0000;
+  background-color: #ce0000;
 }
 .bloc--blue {
   background-color: blue;
 }
 .bloc--blue:hover {
-  background-color: #0003b9;
+  background-color: #0003c7;
 }
 .bloc--purple {
   background-color: #bc00eb;
 }
 .bloc--purple:hover {
-  background-color: #9c00a1;
+  background-color: #9200b6;
 }
 
 .nav {
@@ -107,7 +108,7 @@ footer {
   font-size: 1.5rem;
   gap: 30px;
 }
-.nav .nav--blue {
+.nav--blue {
   color: blue;
 }
 
