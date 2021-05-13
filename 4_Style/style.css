@@ -71,6 +71,9 @@ footer {
   width: 80%;
   justify-content: space-between;
   margin-top: 30px;
+  gap: 4px;
+  padding: 10px;
+  border: 1px solid blue;
 }
 
 .bloc {
@@ -78,17 +81,23 @@ footer {
   flex: 1;
   border: 1px solid black;
 }
-
 .bloc--red {
-  background-color: red;
+  background-color: #ff0000;
 }
-
+.bloc--red:hover {
+  background-color: #bb0000;
+}
 .bloc--blue {
   background-color: blue;
 }
-
-.bloc--green {
-  background-color: green;
+.bloc--blue:hover {
+  background-color: #0003b9;
+}
+.bloc--purple {
+  background-color: #bc00eb;
+}
+.bloc--purple:hover {
+  background-color: #9c00a1;
 }
 
 .nav {
