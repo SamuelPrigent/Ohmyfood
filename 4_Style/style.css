@@ -1,13 +1,13 @@
-/* Mon fichier CSS */
+/* Ohmyfood Style */
 :root {
   --primaire: #9356dc;
   --secondaire: #ff79da;
   --tertiaire: #99e2d0;
-  --quatre: red;
+  --quatre: orange;
 }
 
 .test {
-  background-color: var(--primaire);
+  background-color: var(--tertiaire);
 }
 
 /*
@@ -76,15 +76,18 @@ footer {
 .bloc {
   height: 100px;
   flex: 1;
-  border: 2px solid black;
+  border: 1px solid black;
 }
-.bloc .bloc--red {
+
+.bloc--red {
   background-color: red;
 }
-.bloc .bloc--blue {
+
+.bloc--blue {
   background-color: blue;
 }
-.bloc .bloc--green {
+
+.bloc--green {
   background-color: green;
 }
 
