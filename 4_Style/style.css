@@ -71,7 +71,7 @@ footer {
   width: 80%;
   justify-content: space-between;
   margin-top: 30px;
-  gap: 4px;
+  gap: 8px;
   padding: 10px;
   border: 1px solid blue;
 }
@@ -79,26 +79,32 @@ footer {
 .bloc {
   height: 100px;
   flex: 1;
-  border: 1px solid black;
-  background-color: yellow;
+  border: 3px solid #000000;
+  background-color: #000000;
+  color: #ffffff;
+}
+.bloc:hover {
+  filter: brightness(80%);
 }
 .bloc--red {
   background-color: #ff0000;
-}
-.bloc--red:hover {
-  background-color: #ce0000;
+  border: 3px solid #610000;
 }
 .bloc--blue {
-  background-color: blue;
-}
-.bloc--blue:hover {
-  background-color: #0003c7;
+  background-color: #0000ff;
+  border: 3px solid #000270;
 }
 .bloc--purple {
   background-color: #bc00eb;
+  border: 3px solid #5a0070;
 }
-.bloc--purple:hover {
-  background-color: #9200b6;
+.bloc--purple--outline {
+  background-color: transparent;
+  color: #bc00eb;
+  border-color: #bc00eb;
+}
+.bloc--purple--outline:hover {
+  filter: saturate(0%);
 }
 
 .nav {
