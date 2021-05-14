@@ -1,0 +1,124 @@
+/* Ohmyfood Style */
+
+:root {
+  --primaire: #9356dc;
+  --secondaire: #ff79da;
+  --tertiaire: #99e2d0;
+  --quatre: purple;
+}
+
+.test {
+  background-color: var(--tertiaire);
+}
+
+/*
+Font 
+Title "Shrikhand"
+All "Roboto"
+*/
+
+/* modificateur unique */
+.reset-button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+  border-radius: 0%;
+}
+
+/* modificateur unique */
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center2 {
+  margin: auto;
+}
+
+/* modificateur unique */
+.title {
+  font-family: "Shrikhand", "Roboto", "Arial";
+  font-size: 40px;
+}
+
+body {
+  font-family: "Roboto";
+  font-size: 1.5em;
+  font-weight: 400;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  max-width: 1350px;
+}
+
+footer {
+  font-family: "Roboto";
+  width: 100%;
+}
+
+.conteneur {
+  display: flex;
+  margin: auto;
+  width: 80%;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 8px;
+  padding: 10px;
+  border: 1px solid blue;
+}
+
+.bloc {
+  height: 100px;
+  flex: 1;
+  border: 3px solid #000000;
+  background-color: #000000;
+  color: #ffffff;
+
+  &:hover {
+    filter: brightness(80%);
+  }
+  &--red {
+    background-color: red;
+    border: 3px solid #610000;
+  }
+  &--blue {
+    background-color: #0000ff;
+    border: 3px solid #000270;
+  }
+  &--purple {
+    background-color: #bc00eb;
+    border: 3px solid #5a0070;
+
+    &--outline {
+      background-color: transparent;
+      color: #bc00eb;
+      border-color: #bc00eb;
+      &:hover {
+        filter: saturate(0%);
+      }
+    }
+  }
+}
+
+.nav {
+  margin: 40px auto 40px;
+  display: flex;
+  width: 80%;
+  font-size: 1.5rem;
+  gap: 30px;
+
+  &--blue {
+    color: blue;
+  }
+}
