@@ -81,33 +81,40 @@ footer {
 .bloc {
   height: 100px;
   flex: 1;
-  border: 3px solid #000000;
-  background-color: #000000;
   color: #ffffff;
 
   &:hover {
-    filter: brightness(80%);
+    filter: brightness(85%);
   }
-  &--red {
-    background-color: red;
-    border: 3px solid #610000;
+  &.bloc--one {
+    background-color: var(--primaire);
+    border: 3px solid #5b005e;
   }
-  &--blue {
-    background-color: #0000ff;
-    border: 3px solid #000270;
+  &.bloc--two {
+    background-color: var(--secondaire);
+    border: 3px solid #8b0079;
   }
-  &--purple {
-    background-color: #bc00eb;
-    border: 3px solid #5a0070;
+  &.bloc--three {
+    background-color: var(--tertiaire);
+    border: 3px solid #007045;
+  }
+}
 
-    &--outline {
-      background-color: transparent;
-      color: #bc00eb;
-      border-color: #bc00eb;
-      &:hover {
-        filter: saturate(0%);
-      }
-    }
+.bloc-outline {
+  background-color: transparent;
+  color: black;
+  border: 3px solid black;
+  &:hover {
+    filter: brightness(0%);
+  }
+
+  &.bloc-outline--red {
+    color: red;
+    border-color: red;
+  }
+  &.bloc-outline--blue {
+    color: blue;
+    border-color: blue;
   }
 }
 
@@ -118,7 +125,7 @@ footer {
   font-size: 1.5rem;
   gap: 30px;
 
-  &--blue {
+  .nav--blue {
     color: blue;
   }
 }

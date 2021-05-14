@@ -79,32 +79,39 @@ footer {
 .bloc {
   height: 100px;
   flex: 1;
-  border: 3px solid #000000;
-  background-color: #000000;
   color: #ffffff;
 }
 .bloc:hover {
-  filter: brightness(80%);
+  filter: brightness(85%);
 }
-.bloc--red {
-  background-color: red;
-  border: 3px solid #610000;
+.bloc.bloc--one {
+  background-color: var(--primaire);
+  border: 3px solid #5b005e;
 }
-.bloc--blue {
-  background-color: #0000ff;
-  border: 3px solid #000270;
+.bloc.bloc--two {
+  background-color: var(--secondaire);
+  border: 3px solid #8b0079;
 }
-.bloc--purple {
-  background-color: #bc00eb;
-  border: 3px solid #5a0070;
+.bloc.bloc--three {
+  background-color: var(--tertiaire);
+  border: 3px solid #007045;
 }
-.bloc--purple--outline {
+
+.bloc-outline {
   background-color: transparent;
-  color: #bc00eb;
-  border-color: #bc00eb;
+  color: black;
+  border: 3px solid black;
 }
-.bloc--purple--outline:hover {
-  filter: saturate(0%);
+.bloc-outline:hover {
+  filter: brightness(0%);
+}
+.bloc-outline.bloc-outline--red {
+  color: red;
+  border-color: red;
+}
+.bloc-outline.bloc-outline--blue {
+  color: blue;
+  border-color: blue;
 }
 
 .nav {
@@ -114,7 +121,7 @@ footer {
   font-size: 1.5rem;
   gap: 30px;
 }
-.nav--blue {
+.nav .nav--blue {
   color: blue;
 }
 
