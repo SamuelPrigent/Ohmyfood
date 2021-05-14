@@ -15,5 +15,8 @@
     "url": "https://github.com/SamuelPrigent/SamuelPrigent_3_10052021/issues"
   },
   "homepage": "https://github.com/SamuelPrigent/SamuelPrigent_3_10052021#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "sass": "^1.32.13"
+  }
 }
