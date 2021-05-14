@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch 4_style/style.scss:4_style/style.css"
+    "sass": "sass --watch assets/style/sass/style.scss assets/style/css/style.css"
   },
   "repository": {
     "type": "git",
