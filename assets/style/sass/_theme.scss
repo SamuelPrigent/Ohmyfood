@@ -1,9 +1,11 @@
+// Theme Général du site
+
 // Couleur
 $primaire: #9356dc;
 $secondaire: #ff79da;
 $tertiaire: #99e2d0;
 
-// Font & Structure
+// Police générale
 body {
   font-family: "Roboto";
   font-size: 1.5em;
@@ -13,6 +15,7 @@ body {
   background-position: center;
 }
 
+// Police du titre principal
 .maintitle {
   font-family: "Shrikhand", "Roboto", "Arial";
   font-size: 40px;
