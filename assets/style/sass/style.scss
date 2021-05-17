@@ -1,13 +1,21 @@
 // Ohmyfood Style
 
-@import "_color";
+// Base
+@import "_theme";
 
 @import "_mixin";
 
-@import "_body";
+@import "_layout";
 
-@import "_container";
-
+// Components
 @import "_btn.scss";
 
-@import "_nav";
+/*
+Base
+Utils
+Layout (mise en page)
+Composants
+Pages
+Themes
+Vendors (tiers)
+*/

@@ -1,6 +1,6 @@
-// Mixin @include
-// Extenssion @extend
-// or classic modif class
+// Mixin @include (add in sass class to compile)
+// Extenssion @extend (add in sass class to compile)
+// Normal modif class (add in html)
 
 .center {
   display: flex;
@@ -10,4 +10,8 @@
 
 .center2 {
   margin: auto;
+}
+
+@mixin blueborder {
+  border: 4px solid blue;
 }
