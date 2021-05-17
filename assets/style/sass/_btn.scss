@@ -1,0 +1,46 @@
+// Les boutons plein
+.btn {
+  height: 100px;
+  flex: 1;
+  color: #ffffff;
+  user-select: none;
+
+  &:hover {
+    filter: brightness(85%);
+  }
+  &.btn--one {
+    background-color: $primaire;
+    border: 3px solid darken($primaire, 30%);
+  }
+  &.btn--two {
+    background-color: $secondaire;
+    border: 3px solid darken($secondaire, 50%);
+  }
+  &.btn--three {
+    background-color: $tertiaire;
+    border: 3px solid darken($tertiaire, 30%);
+  }
+  &.btn--four {
+    background-color: darken($tertiaire, 30%);
+    border: 3px solid darken($tertiaire, 50%);
+  }
+}
+
+// Les boutons vides
+.btn-outline {
+  background-color: transparent;
+  color: black;
+  border: 3px solid black;
+  &:hover {
+    filter: brightness(0%);
+  }
+
+  &.btn-outline--one {
+    color: $primaire;
+    border-color: $primaire;
+  }
+  &.btn-outline--blue {
+    color: blue;
+    border-color: blue;
+  }
+}

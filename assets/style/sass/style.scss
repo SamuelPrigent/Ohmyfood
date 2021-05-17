@@ -1,131 +1,13 @@
-/* Ohmyfood Style */
+// Ohmyfood Style
 
-:root {
-  --primaire: #9356dc;
-  --secondaire: #ff79da;
-  --tertiaire: #99e2d0;
-  --quatre: purple;
-}
+@import "_color";
 
-.test {
-  background-color: var(--tertiaire);
-}
+@import "_mixin";
 
-/*
-Font 
-Title "Shrikhand"
-All "Roboto"
-*/
+@import "_body";
 
-/* modificateur unique */
-.reset-button {
-  border: none;
-  margin: 0;
-  padding: 0;
-  overflow: visible;
-  color: inherit;
-  font: inherit;
-  line-height: normal;
-  -webkit-font-smoothing: inherit;
-  -moz-osx-font-smoothing: inherit;
-  -webkit-appearance: none;
-  border-radius: 0%;
-}
+@import "_container";
 
-/* modificateur unique */
-.center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+@import "_btn.scss";
 
-.center2 {
-  margin: auto;
-}
-
-/* modificateur unique */
-.title {
-  font-family: "Shrikhand", "Roboto", "Arial";
-  font-size: 40px;
-}
-
-body {
-  font-family: "Roboto";
-  font-size: 1.5em;
-  font-weight: 400;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-}
-
-header {
-  max-width: 1350px;
-}
-
-footer {
-  font-family: "Roboto";
-  width: 100%;
-}
-
-.conteneur {
-  display: flex;
-  margin: auto;
-  width: 80%;
-  justify-content: space-between;
-  margin-top: 30px;
-  gap: 8px;
-  padding: 10px;
-  border: 1px solid blue;
-}
-
-.bloc {
-  height: 100px;
-  flex: 1;
-  color: #ffffff;
-
-  &:hover {
-    filter: brightness(85%);
-  }
-  &.bloc--one {
-    background-color: var(--primaire);
-    border: 3px solid #5b005e;
-  }
-  &.bloc--two {
-    background-color: var(--secondaire);
-    border: 3px solid #8b0079;
-  }
-  &.bloc--three {
-    background-color: var(--tertiaire);
-    border: 3px solid #007045;
-  }
-}
-
-.bloc-outline {
-  background-color: transparent;
-  color: black;
-  border: 3px solid black;
-  &:hover {
-    filter: brightness(0%);
-  }
-
-  &.bloc-outline--red {
-    color: red;
-    border-color: red;
-  }
-  &.bloc-outline--blue {
-    color: blue;
-    border-color: blue;
-  }
-}
-
-.nav {
-  margin: 40px auto 40px;
-  display: flex;
-  width: 80%;
-  font-size: 1.5rem;
-  gap: 30px;
-
-  .nav--blue {
-    color: blue;
-  }
-}
+@import "_nav";

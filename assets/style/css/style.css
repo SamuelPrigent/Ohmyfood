@@ -1,36 +1,3 @@
-/* Ohmyfood Style */
-:root {
-  --primaire: #9356dc;
-  --secondaire: #ff79da;
-  --tertiaire: #99e2d0;
-  --quatre: purple;
-}
-
-.test {
-  background-color: var(--tertiaire);
-}
-
-/*
-Font 
-Title "Shrikhand"
-All "Roboto"
-*/
-/* modificateur unique */
-.reset-button {
-  border: none;
-  margin: 0;
-  padding: 0;
-  overflow: visible;
-  color: inherit;
-  font: inherit;
-  line-height: normal;
-  -webkit-font-smoothing: inherit;
-  -moz-osx-font-smoothing: inherit;
-  -webkit-appearance: none;
-  border-radius: 0%;
-}
-
-/* modificateur unique */
 .center {
   display: flex;
   align-items: center;
@@ -39,12 +6,6 @@ All "Roboto"
 
 .center2 {
   margin: auto;
-}
-
-/* modificateur unique */
-.title {
-  font-family: "Shrikhand", "Roboto", "Arial";
-  font-size: 40px;
 }
 
 body {
@@ -56,16 +17,12 @@ body {
   background-position: center;
 }
 
-header {
-  max-width: 1350px;
+.maintitle {
+  font-family: "Shrikhand", "Roboto", "Arial";
+  font-size: 40px;
 }
 
-footer {
-  font-family: "Roboto";
-  width: 100%;
-}
-
-.conteneur {
+.container {
   display: flex;
   margin: auto;
   width: 80%;
@@ -76,40 +33,45 @@ footer {
   border: 1px solid blue;
 }
 
-.bloc {
+.btn {
   height: 100px;
   flex: 1;
   color: #ffffff;
+  user-select: none;
 }
-.bloc:hover {
+.btn:hover {
   filter: brightness(85%);
 }
-.bloc.bloc--one {
-  background-color: var(--primaire);
-  border: 3px solid #5b005e;
+.btn.btn--one {
+  background-color: #9356dc;
+  border: 3px solid #481a7f;
 }
-.bloc.bloc--two {
-  background-color: var(--secondaire);
-  border: 3px solid #8b0079;
+.btn.btn--two {
+  background-color: #ff79da;
+  border: 3px solid #790058;
 }
-.bloc.bloc--three {
-  background-color: var(--tertiaire);
-  border: 3px solid #007045;
+.btn.btn--three {
+  background-color: #99e2d0;
+  border: 3px solid #32b091;
+}
+.btn.btn--four {
+  background-color: #32b091;
+  border: 3px solid #1b6150;
 }
 
-.bloc-outline {
+.btn-outline {
   background-color: transparent;
   color: black;
   border: 3px solid black;
 }
-.bloc-outline:hover {
+.btn-outline:hover {
   filter: brightness(0%);
 }
-.bloc-outline.bloc-outline--red {
-  color: red;
-  border-color: red;
+.btn-outline.btn-outline--one {
+  color: #9356dc;
+  border-color: #9356dc;
 }
-.bloc-outline.bloc-outline--blue {
+.btn-outline.btn-outline--blue {
   color: blue;
   border-color: blue;
 }
