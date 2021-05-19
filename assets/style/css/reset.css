@@ -83,7 +83,8 @@ summary,
 time,
 mark,
 audio,
-video {
+video,
+button {
   margin: 0;
   padding: 0;
   border: 0;
@@ -128,17 +129,21 @@ table {
   border-spacing: 0;
 }
 
-/* modificateur unique */
-.reset-button {
-  border: none;
-  margin: 0;
-  padding: 0;
-  overflow: visible;
-  color: inherit;
-  font: inherit;
-  line-height: normal;
-  -webkit-font-smoothing: inherit;
-  -moz-osx-font-smoothing: inherit;
+/* reset button, input */
+button {
+  cursor: pointer;
+  text-align: center;
   -webkit-appearance: none;
-  border-radius: 0%;
+  -moz-appearance: none;
 }
+
+button,
+input:focus {
+  outline: 0px solid #0400ff;
+}
+
+/*
+input {
+  border: 1px solid grey;
+}
+*/
