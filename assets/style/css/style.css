@@ -36,6 +36,7 @@ body {
   width: 80%;
   margin: 30px auto 30px;
   padding: 15px;
+  margin-bottom: 100px;
   display: flex;
   justify-content: space-around;
   justify-content: left;
@@ -146,12 +147,12 @@ input {
   position: absolute;
   background-color: #1100ff;
   border-radius: 0%;
-  transform: translateX(0%) rotate(0deg) scale(1);
+  transform: translateX(0%) rotate(0deg);
 }
 
 .moveball2:hover > .ball2 {
-  transform: translateX(2200%) rotate(900deg) scale(0.6);
-  transition: transform 1200ms, background-color 900ms, border-radius 1000ms;
+  transform: translateX(2200%) rotate(900deg);
+  transition: transform 1100ms, background-color 800ms, border-radius 1000ms;
   background-color: #1100ff00;
   transition-delay: 0ms, 50ms, 0ms;
   border-radius: 50%;
@@ -165,14 +166,14 @@ input {
   width: 50px;
   background-color: #1100ff00;
   border-radius: 50%;
-  transform: translateX(2200%) rotate(900deg) scale(0.6);
+  transform: translateX(2200%) rotate(900deg);
 }
 
 .moveball2:hover > .ball3 {
-  transform: translateX(0%) rotate(0deg) scale(1);
-  transition: transform 1200ms, background-color 1200ms, border-radius 1000ms;
+  transform: translateX(0%) rotate(0deg);
+  transition: transform 1100ms, background-color 1100ms, border-radius 1000ms;
   background-color: #1100ff;
-  transition-delay: 400ms, 450ms, 400ms;
+  transition-delay: 500ms, 550ms, 500ms;
   border-radius: 0%;
   transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
 }
@@ -180,6 +181,43 @@ input {
 .moveball2 {
   width: 100%;
   height: 100%;
+}
+
+.moveball3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bloc2anim {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ball4 {
+  height: 50px;
+  width: 50px;
+  background-color: brown;
+}
+
+.ball5 {
+  height: 50px;
+  width: 50px;
+  background-color: orangered;
+}
+
+.btn:hover + .bloc2anim > .ball4 {
+  transform: translateX(300px) rotate(1turn);
+  background-color: orchid;
+  transition: transform 200ms, background-color 100ms;
+}
+.btn:hover + .bloc2anim > .ball5 {
+  transform: translateX(200px) rotate(1turn);
+  background-color: palevioletred;
+  transition: transform 300ms, background-color 100ms;
 }
 
 /*# sourceMappingURL=style.css.map */
