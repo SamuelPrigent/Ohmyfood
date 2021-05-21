@@ -202,3 +202,52 @@ input {
     }
   }
 }
+
+// menu check
+.nomplat-bloc {
+  width: auto;
+  justify-content: left;
+  display: flex;
+  gap: 20px;
+  border: 2px solid blue;
+}
+
+.nomplat-text {
+  font-size: 0.85em;
+}
+
+.ball6 {
+  height: 60px;
+  width: 60px;
+  border-radius: 25%;
+  background-color: brown;
+  transform: translate(100%);
+}
+
+.ball6icon {
+  display: flex;
+  position: relative;
+  bottom: 1px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+#checkmenu {
+  display: initial;
+
+  &:checked {
+    & + .ball6 {
+      background-color: $tertiaire;
+      transform: translate(0%);
+      transition: all 700ms;
+      transition-timing-function: ease-in-out;
+    }
+    & + .ball6 > .ball6icon {
+      transform: rotate(1turn);
+      transition: 700ms;
+      transition-timing-function: ease-in-out;
+    }
+  }
+}
