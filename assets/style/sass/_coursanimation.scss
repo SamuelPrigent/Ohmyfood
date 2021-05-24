@@ -379,9 +379,6 @@ input {
 
 // sound effect
 $mintgreen: #15dea5;
-$size: 30px;
-$anim-dur: 1000ms;
-$nombrebarre: 6;
 
 .soundbloc {
   width: 280px;
@@ -394,9 +391,11 @@ $nombrebarre: 6;
 .mintbar {
   background-color: $mintgreen;
   height: 100%;
-  width: 30px;
+  width: 28px;
   animation-name: soundbar;
   animation-duration: 1000ms;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 
   &--bar1 {
     animation-delay: 100ms;

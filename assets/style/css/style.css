@@ -372,9 +372,11 @@ input {
 .mintbar {
   background-color: #15dea5;
   height: 100%;
-  width: 30px;
+  width: 28px;
   animation-name: soundbar;
   animation-duration: 1000ms;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 .mintbar--bar1 {
   animation-delay: 100ms;
