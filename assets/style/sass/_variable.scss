@@ -2,6 +2,7 @@
 // Extenssion @extend (add in sass class to compile)
 // Normal modif class (add in html)
 
+//Mise en forme
 .center {
   display: flex;
   align-items: center;
@@ -20,3 +21,6 @@
   margin: 30px auto 30px;
   padding: 15px;
 }
+
+// animation preset
+$easy: cubic-bezier(0.49, 0.18, 0.23, 1);

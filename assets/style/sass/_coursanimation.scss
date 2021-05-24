@@ -1,3 +1,33 @@
+.container {
+  width: 80%;
+  @include marginbloc;
+  display: flex;
+  justify-content: space-around;
+  gap: 8px;
+  border: 0px solid blue;
+}
+
+.container2 {
+  width: 80%;
+  @include marginbloc;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-around;
+  justify-content: left;
+  border: 2px solid #000000;
+}
+
+.container3 {
+  width: 80%;
+  @include marginbloc;
+  margin-bottom: 100px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  justify-content: center;
+  border: 2px solid #000000;
+}
+
 // Les boutons plein
 .btn {
   height: 50px;
@@ -241,13 +271,60 @@ input {
     & + .ball6 {
       background-color: $tertiaire;
       transform: translate(0%);
-      transition: all 700ms;
+      transition: all 600ms;
       transition-timing-function: ease-in-out;
     }
     & + .ball6 > .ball6icon {
       transform: rotate(1turn);
-      transition: 700ms;
+      transition: 600ms;
       transition-timing-function: ease-in-out;
     }
   }
+}
+
+// skew
+.blocskew {
+  display: flex;
+  gap: 30px;
+  width: 500px;
+  height: auto;
+}
+
+.ball7 {
+  height: 60px;
+  width: 60px;
+  background-color: brown;
+  transform: translateX(100%);
+  overflow: hidden;
+}
+
+#checkmenu2 {
+  &:checked {
+    & + .ball7 {
+      background-color: blue;
+      transform: translateX(0%);
+      transition: all 500ms;
+      transition-timing-function: linear;
+    }
+  }
+}
+
+.blocbarre {
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+}
+
+.energie {
+  background-color: orange;
+  height: 100%;
+  transform: scaleX(0.1);
+  transform-origin: left;
+}
+
+.btn:hover + .blocbarre > .energie {
+  background-color: green;
+  transform: scaleX(1);
+  transition: 2000ms;
+  transition-timing-function: $easy;
 }
