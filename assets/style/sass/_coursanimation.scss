@@ -135,6 +135,17 @@
   &:not(:focus):invalid {
     background-color: #db0000e1;
     border: 2px solid #db0000e1;
+    animation-name: shakebox;
+    animation-duration: 170ms;
+  }
+}
+
+@keyframes shakebox {
+  25% {
+    transform: translateX(1%);
+  }
+  75% {
+    transform: translateX(1% * -1);
   }
 }
 
@@ -281,8 +292,9 @@ input {
     }
   }
 }
+// fin menu check
 
-// skew
+// Bloc test
 .blocskew {
   display: flex;
   gap: 30px;
@@ -308,23 +320,116 @@ input {
     }
   }
 }
+//fin bloc test
 
+// barre batterie
 .blocbarre {
-  width: 100%;
+  width: 60%;
   height: auto;
-  border: 1px solid black;
+  border: 1px solid white;
+  animation-name: bordertime;
+  animation-duration: 3000ms;
+}
+
+@keyframes bordertime {
+  0% {
+    border: 1px solid black;
+  }
+  99% {
+    border: 1px solid black;
+  }
+  100% {
+    border: 1px solid white;
+  }
 }
 
 .energie {
-  background-color: orange;
-  height: 100%;
-  transform: scaleX(0.1);
+  background-color: red;
+  height: 50px;
+  transform: scaleX(0);
   transform-origin: left;
+  animation-name: rechargebarre;
+  animation-duration: 3000ms;
 }
 
-.btn:hover + .blocbarre > .energie {
-  background-color: green;
-  transform: scaleX(1);
-  transition: 2000ms;
-  transition-timing-function: $easy;
+@keyframes rechargebarre {
+  20% {
+    background-color: orangered;
+    transform: scaleX(0.1);
+    animation: linear;
+    opacity: 1;
+  }
+  30% {
+    background-color: yellow;
+    transform: scaleX(0.3);
+    animation: ease-in;
+    opacity: 1;
+  }
+  60% {
+    background-color: rgb(157, 255, 0);
+    transform: scaleX(0.6);
+    animation: ease-in-out;
+  }
+  100% {
+    background-color: rgb(0, 158, 0);
+    transform: scaleX(1);
+    animation: ease-in-out;
+  }
+}
+
+// sound effect
+$mintgreen: #15dea5;
+$size: 30px;
+$anim-dur: 1000ms;
+$nombrebarre: 6;
+
+.soundbloc {
+  width: 280px;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  border: 0px solid green;
+}
+
+.mintbar {
+  background-color: $mintgreen;
+  height: 100%;
+  width: 30px;
+  animation-name: soundbar;
+  animation-duration: 1000ms;
+
+  &--bar1 {
+    animation-delay: 100ms;
+  }
+  &--bar2 {
+    animation-delay: 200ms;
+  }
+  &--bar3 {
+    animation-delay: 300ms;
+  }
+  &--bar4 {
+    animation-delay: 400ms;
+  }
+  &--bar5 {
+    animation-delay: 500ms;
+  }
+  &--bar6 {
+    animation-delay: 600ms;
+  }
+}
+
+// fonction que j'arrive pas a comprendre et a faire fonctionner pour faire un décalage de delay
+// @for $i from 1 through 6 {
+// nth-child#{$i + 1} {
+//   animation-delay: #{$i * 1}s;
+//  }
+// }
+
+@keyframes soundbar {
+  0% {
+    transform: scaleY(0.55);
+  }
+  100% {
+    transform: scaleY(1);
+  }
 }
