@@ -1,34 +1,12 @@
 // Layout : Mise en page des blocs de bases
-.container {
-  width: 80%;
-  @include marginbloc;
-  display: flex;
-  justify-content: space-around;
-  gap: 8px;
-  border: 0px solid blue;
+
+// Police générale
+body {
+  font-family: "Roboto", "Arial";
+  font-size: 1.2em;
+  font-weight: 400;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  text-decoration: none;
 }
-
-.container2 {
-  width: 80%;
-  @include marginbloc;
-  margin-bottom: 100px;
-  display: flex;
-  justify-content: space-around;
-  justify-content: left;
-  border: 2px solid #000000;
-}
-
-.container3 {
-  width: 80%;
-  @include marginbloc;
-  margin-bottom: 100px;
-  display: flex;
-  gap: 20px;
-  justify-content: space-between;
-  justify-content: center;
-  border: 2px solid #000000;
-}
-
-// Header
-
-// Container
