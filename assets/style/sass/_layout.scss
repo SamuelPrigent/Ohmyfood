@@ -11,3 +11,91 @@ body {
   text-decoration: none;
   background-color: $grey;
 }
+
+// Les conteneurs
+.conteneur-title {
+  width: auto;
+  height: 64px;
+  max-width: 500px;
+  justify-content: center;
+  padding: 0px 22px 0px;
+  display: flex;
+  margin: auto;
+  border: 0px solid blue;
+  background-color: white;
+}
+
+.conteneur-presentation_principal {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+  width: auto;
+  height: auto;
+  gap: 0px;
+  padding: 20px 22px 56px;
+  justify-content: center;
+  align-items: center;
+  background-color: $grey;
+  color: black;
+  border: 0px solid blue;
+}
+
+.conteneur-presentation_localisation {
+  display: flex;
+  max-width: 500px;
+  margin: auto;
+  width: auto;
+  height: 51px;
+  gap: 10px;
+  padding: 0px 22px 0px;
+  justify-content: center;
+  align-items: center;
+  background-color: $medium-grey;
+  color: $dark-grey;
+  border: 0px solid blue;
+  font-size: 0.81em;
+  -webkit-box-shadow: inset 0px 7px 16px -16px #000000;
+  box-shadow: inset 0px 7px 16px -16px #000000;
+}
+
+.conteneur-fonctionnement {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 500px;
+  height: auto;
+  padding: 20px 22px 37px;
+  margin: auto;
+  background-color: white;
+  border-radius: 0px;
+  border: 0px solid blue;
+}
+
+.conteneur-restaurant {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 500px;
+  height: auto;
+  padding: 28px 22px 34px;
+  margin: auto;
+  background-color: $grey;
+  border-radius: 0px;
+  border: 0px solid blue;
+}
+
+.conteneur-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 500px;
+  height: auto;
+  padding: 22px 25px 14px;
+  margin-bottom: 7px;
+  margin: auto;
+  background-color: $dark-grey;
+  color: white;
+  border-radius: 0px;
+  border: 0px solid green;
+}
