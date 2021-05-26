@@ -39,7 +39,7 @@ body {
 .maintitle2 {
   height: 28px;
   position: relative;
-  right: 27px;
+  right: 30px;
 }
 
 .icon-back {
@@ -604,6 +604,7 @@ body {
 .apparition {
   animation-name: apparition;
   animation-duration: 900ms;
+  animation-fill-mode: both;
 }
 .apparition--meal1 {
   animation-delay: 100ms;
@@ -623,13 +624,15 @@ body {
     transform: translateY(19%);
     opacity: 0;
   }
-  60% {
+  67% {
+    animation: cubic-bezier(0, 0.88, 0.64, 0.99);
     opacity: 1;
   }
   100% {
     transform: translateY(0%);
     opacity: 1;
     animation: cubic-bezier(0, 0.88, 0.64, 0.99);
+    animation-fill-mode: both;
   }
 }
 
