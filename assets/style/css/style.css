@@ -441,6 +441,7 @@ body {
   width: 100%;
   object-fit: cover;
   position: absolute;
+  max-width: 500px;
 }
 
 .conteneur-menu {
@@ -451,7 +452,7 @@ body {
   justify-content: space-between;
   max-width: 500px;
   height: auto;
-  padding: 20px 0px 0px;
+  padding: 20px 22px 0px;
   margin: auto;
   background-color: #f6f6f6;
   border-radius: 35px 35px 0px 0px;
@@ -463,12 +464,11 @@ body {
   width: auto;
   height: auto;
   text-align: left;
-  padding: 13px 31px 15px 17px;
+  padding: 13px 17px 15px 0px;
   gap: 3px;
   margin-top: 4px;
   margin-bottom: 25px;
   justify-content: space-between;
-  border: 0px solid green;
 }
 
 .conteneur-menu_card_text_title {
@@ -494,8 +494,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  width: 90%;
+  width: 100%;
   margin: auto;
+  border: 0px solid green;
 }
 
 .conteneur-menu_bloc_title {
@@ -513,7 +514,7 @@ body {
 .conteneur-menu_bloc_content {
   display: flex;
   flex-direction: column;
-  width: 85%;
+  width: 100%;
   margin: auto;
   border-radius: 15px;
   padding: 15px;
