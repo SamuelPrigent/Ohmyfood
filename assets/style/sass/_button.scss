@@ -1,0 +1,42 @@
+.button-presensation {
+  display: flex;
+  margin-top: 20px;
+  padding: 0px 25px 0px;
+  justify-content: center;
+  align-items: center;
+  height: 52px;
+  border-radius: 26px;
+  font-family: "Roboto", "Arial";
+  color: white;
+  font-size: 0.8em;
+  background: #ff79da;
+  background: -moz-linear-gradient(top, #ff79da 0%, #ff6ef6 0%, #9356dc 100%);
+  background: -webkit-linear-gradient(
+    top,
+    #ff79da 0%,
+    #ff6ef6 0%,
+    #9356dc 100%
+  );
+  background: linear-gradient(to bottom, #ff79da 0%, #ff6ef6 0%, #9356dc 100%);
+}
+
+.button-commande {
+  display: flex;
+  padding: 0px 45px 0px;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  border-radius: 24px;
+  font-family: "Roboto", "Arial";
+  color: white;
+  font-size: 0.8em;
+  background: #ff79da;
+  background: -moz-linear-gradient(top, #ff79da 0%, #ff6ef6 0%, #9356dc 100%);
+  background: -webkit-linear-gradient(
+    top,
+    #ff79da 0%,
+    #ff6ef6 0%,
+    #9356dc 100%
+  );
+  background: linear-gradient(to bottom, #ff79da 0%, #ff6ef6 0%, #9356dc 100%);
+}
