@@ -601,4 +601,36 @@ body {
   background: linear-gradient(to bottom, #ff79da 0%, #ff6ef6 0%, #9356dc 100%);
 }
 
+.apparition {
+  animation-name: apparition;
+  animation-duration: 900ms;
+}
+.apparition--meal1 {
+  animation-delay: 100ms;
+}
+.apparition--meal2 {
+  animation-delay: 220ms;
+}
+.apparition--meal3 {
+  animation-delay: 340ms;
+}
+.apparition--meal4 {
+  animation-delay: 460ms;
+}
+
+@keyframes apparition {
+  0% {
+    transform: translateY(19%);
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+    animation: cubic-bezier(0, 0.88, 0.64, 0.99);
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
