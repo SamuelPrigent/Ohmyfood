@@ -36,6 +36,26 @@ body {
   height: 28px;
 }
 
+.maintitle2 {
+  height: 28px;
+  position: relative;
+  right: 27px;
+}
+
+.icon-back {
+  color: #353535;
+  font-size: 1em;
+  text-decoration: none;
+  display: flex;
+  height: auto;
+  width: 60px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  user-select: none;
+  border: 0px solid blue;
+}
+
 .conteneur-title {
   width: auto;
   height: 64px;
@@ -515,11 +535,19 @@ body {
 .conteneur-menu_bloc_content_title {
   font-size: 0.9em;
   font-weight: 400;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .conteneur-menu_bloc_content_details {
   font-size: 0.75em;
   font-weight: 300;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .conteneur-menu_bloc_content_price {
