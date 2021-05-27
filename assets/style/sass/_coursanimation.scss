@@ -1,6 +1,6 @@
 .container {
   width: 80%;
-  @include marginbloc;
+  margin: auto;
   display: flex;
   justify-content: space-around;
   gap: 8px;
@@ -9,17 +9,18 @@
 
 .container2 {
   width: 80%;
-  @include marginbloc;
+  margin: auto;
+  margin-top: 100px;
   margin-bottom: 100px;
   display: flex;
   justify-content: space-around;
   justify-content: left;
-  border: 2px solid #000000;
+  border: 0px solid #000000;
 }
 
 .container3 {
   width: 80%;
-  @include marginbloc;
+  margin: auto;
   margin-bottom: 100px;
   display: flex;
   gap: 20px;
@@ -109,7 +110,7 @@ $easy: cubic-bezier(0.49, 0.18, 0.23, 1);
 
   &.btn-outline--blue {
     color: blue;
-    @include blueborder;
+    border: 2px solid blue;
 
     &:hover {
       background-color: blue;
@@ -252,8 +253,15 @@ input {
   width: auto;
   justify-content: left;
   display: flex;
-  gap: 20px;
-  border: 2px solid blue;
+  border: 1px solid $dark-grey;
+  overflow: hidden;
+}
+
+.bordercolor {
+  border: 0px solid blue;
+  background-color: $grey;
+  color: black;
+  display: flex;
 }
 
 .nomplat-text {
@@ -262,24 +270,27 @@ input {
 
 .ball6 {
   height: 60px;
+  min-width: 60px;
   width: 60px;
-  border-radius: 25%;
-  background-color: brown;
+  border-radius: 0% 25% 25% 0%;
+  background-color: $tertiaire;
   transform: translate(100%);
+  position: relative;
 }
 
 .ball6icon {
   display: flex;
   position: relative;
   bottom: 1px;
-  height: 100%;
+  height: 110%;
+  font-size: 1.1em;
   align-items: center;
   justify-content: center;
   color: white;
 }
 
 #checkmenu {
-  display: initial;
+  display: none;
 
   &:checked {
     & + .ball6 {
