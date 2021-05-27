@@ -8,14 +8,14 @@
 }
 
 .container2 {
-  width: 80%;
+  width: 90%;
   margin: auto;
   margin-top: 100px;
   margin-bottom: 100px;
   display: flex;
   justify-content: space-around;
   justify-content: left;
-  border: 0px solid #000000;
+  border: 1px solid #000000;
 }
 
 .container3 {
@@ -248,46 +248,58 @@ input {
   }
 }
 
-// menu check
-.nomplat-bloc {
-  width: auto;
-  justify-content: left;
-  display: flex;
-  border: 1px solid $dark-grey;
-  overflow: hidden;
-}
-
-.bordercolor {
-  border: 0px solid blue;
-  background-color: $grey;
-  color: black;
-  display: flex;
-}
+// MENU CHECK
 
 .nomplat-text {
   font-size: 0.85em;
 }
 
-.ball6 {
-  height: 60px;
-  min-width: 60px;
-  width: 60px;
-  border-radius: 0% 25% 25% 0%;
-  background-color: $tertiaire;
-  transform: translate(100%);
-  position: relative;
-}
-
 .ball6icon {
   display: flex;
   position: relative;
-  bottom: 1px;
+  bottom: 3px;
   height: 110%;
   font-size: 1.1em;
   align-items: center;
   justify-content: center;
   color: white;
 }
+.nomplat-bloc {
+  justify-content: left;
+  display: flex;
+  border: 1px solid black;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.label_check {
+  border: 1px solid blue;
+  background-color: $grey;
+  color: black;
+  height: 58px;
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+//   overflow: hidden;
+// white-space: nowrap;
+// text-overflow: ellipsis;
+
+.ball6 {
+  height: 58px;
+  min-width: 58px;
+  width: 58px;
+  border-radius: 0% 25% 25% 0%;
+  background-color: $tertiaire;
+  transform: translate(105%);
+  position: absolute;
+  right: 0;
+}
+
+// position si ball dans le label : transform: translate(500%, -34%);
 
 #checkmenu {
   display: none;
@@ -306,35 +318,35 @@ input {
     }
   }
 }
+
+.textall {
+  display: flex;
+  flex-direction: column;
+}
+
+.text1 {
+  border: 1px solid red;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.text2 {
+  border: 1px solid green;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 // fin menu check
 
-// Bloc test
-.blocskew {
-  display: flex;
-  gap: 30px;
-  width: 500px;
-  height: auto;
-}
-
-.ball7 {
-  height: 60px;
-  width: 60px;
-  background-color: brown;
-  transform: translateX(100%);
-  overflow: hidden;
-}
+// check menu 2
 
 #checkmenu2 {
-  &:checked {
-    & + .ball7 {
-      background-color: blue;
-      transform: translateX(0%);
-      transition: all 500ms;
-      transition-timing-function: linear;
-    }
-  }
+  display: none;
 }
-//fin bloc test
 
 // barre batterie
 .blocbarre {

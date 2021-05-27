@@ -656,14 +656,14 @@ body {
 }
 
 .container2 {
-  width: 80%;
+  width: 90%;
   margin: auto;
   margin-top: 100px;
   margin-bottom: 100px;
   display: flex;
   justify-content: space-around;
   justify-content: left;
-  border: 0px solid #000000;
+  border: 1px solid #000000;
 }
 
 .container3 {
@@ -864,44 +864,50 @@ input {
   transition: transform 300ms, background-color 100ms;
 }
 
-.nomplat-bloc {
-  width: auto;
-  justify-content: left;
-  display: flex;
-  border: 1px solid #353535;
-  overflow: hidden;
-}
-
-.bordercolor {
-  border: 0px solid blue;
-  background-color: #f6f6f6;
-  color: black;
-  display: flex;
-}
-
 .nomplat-text {
   font-size: 0.85em;
-}
-
-.ball6 {
-  height: 60px;
-  min-width: 60px;
-  width: 60px;
-  border-radius: 0% 25% 25% 0%;
-  background-color: #99e2d0;
-  transform: translate(100%);
-  position: relative;
 }
 
 .ball6icon {
   display: flex;
   position: relative;
-  bottom: 1px;
+  bottom: 3px;
   height: 110%;
   font-size: 1.1em;
   align-items: center;
   justify-content: center;
   color: white;
+}
+
+.nomplat-bloc {
+  justify-content: left;
+  display: flex;
+  border: 1px solid black;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.label_check {
+  border: 1px solid blue;
+  background-color: #f6f6f6;
+  color: black;
+  height: 58px;
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.ball6 {
+  height: 58px;
+  min-width: 58px;
+  width: 58px;
+  border-radius: 0% 25% 25% 0%;
+  background-color: #99e2d0;
+  transform: translate(105%);
+  position: absolute;
+  right: 0;
 }
 
 #checkmenu {
@@ -919,26 +925,29 @@ input {
   transition-timing-function: ease-in-out;
 }
 
-.blocskew {
+.textall {
   display: flex;
-  gap: 30px;
-  width: 500px;
-  height: auto;
+  flex-direction: column;
 }
 
-.ball7 {
-  height: 60px;
-  width: 60px;
-  background-color: brown;
-  transform: translateX(100%);
+.text1 {
+  border: 1px solid red;
+  display: inline-block;
   overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
-#checkmenu2:checked + .ball7 {
-  background-color: blue;
-  transform: translateX(0%);
-  transition: all 500ms;
-  transition-timing-function: linear;
+.text2 {
+  border: 1px solid green;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#checkmenu2 {
+  display: none;
 }
 
 .blocbarre {
