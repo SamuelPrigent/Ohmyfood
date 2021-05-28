@@ -529,6 +529,9 @@ body {
   box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.14);
   -webkit-box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .conteneur-menu_bloc_content_top {
@@ -646,6 +649,85 @@ body {
     animation-fill-mode: both;
   }
 }
+.check_zone {
+  border: 0px solid blue;
+  background-color: white;
+  color: black;
+  height: 58px;
+  display: flex;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.greencheck {
+  height: 70px;
+  min-width: 68px;
+  width: 68px;
+  border-radius: 0% 25% 25% 0%;
+  background-color: #99e2d0;
+  transform: translate(123%);
+  position: absolute;
+  right: 0;
+  top: -15px;
+}
+
+.greencheck-icon {
+  display: flex;
+  position: relative;
+  bottom: 3px;
+  right: 1px;
+  height: 110%;
+  font-size: 1.12em;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+#checkmenu1,
+#checkmenu2,
+#checkmenu3,
+#checkmenu4,
+#checkmenu5,
+#checkmenu6,
+#checkmenu7,
+#checkmenu8,
+#checkmenu9,
+#checkmenu10 {
+  display: none;
+}
+#checkmenu1:checked + .greencheck,
+#checkmenu2:checked + .greencheck,
+#checkmenu3:checked + .greencheck,
+#checkmenu4:checked + .greencheck,
+#checkmenu5:checked + .greencheck,
+#checkmenu6:checked + .greencheck,
+#checkmenu7:checked + .greencheck,
+#checkmenu8:checked + .greencheck,
+#checkmenu9:checked + .greencheck,
+#checkmenu10:checked + .greencheck {
+  background-color: #99e2d0;
+  transform: translate(27%);
+  transition: all 600ms;
+  transition-timing-function: ease-in-out;
+}
+#checkmenu1:checked + .greencheck > .greencheck-icon,
+#checkmenu2:checked + .greencheck > .greencheck-icon,
+#checkmenu3:checked + .greencheck > .greencheck-icon,
+#checkmenu4:checked + .greencheck > .greencheck-icon,
+#checkmenu5:checked + .greencheck > .greencheck-icon,
+#checkmenu6:checked + .greencheck > .greencheck-icon,
+#checkmenu7:checked + .greencheck > .greencheck-icon,
+#checkmenu8:checked + .greencheck > .greencheck-icon,
+#checkmenu9:checked + .greencheck > .greencheck-icon,
+#checkmenu10:checked + .greencheck > .greencheck-icon {
+  transform: rotate(1turn);
+  transition: 600ms;
+  transition-timing-function: ease-in-out;
+}
+
 .container {
   width: 80%;
   margin: auto;
@@ -899,6 +981,19 @@ input {
   width: 100%;
 }
 
+.check_zone {
+  border: 0px solid blue;
+  background-color: white;
+  color: black;
+  height: 58px;
+  display: flex;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .ball6 {
   height: 58px;
   min-width: 58px;
@@ -920,6 +1015,21 @@ input {
   transition-timing-function: ease-in-out;
 }
 #checkmenu:checked + .ball6 > .ball6icon {
+  transform: rotate(1turn);
+  transition: 600ms;
+  transition-timing-function: ease-in-out;
+}
+
+#checkmenu1 {
+  display: none;
+}
+#checkmenu1:checked + .ball6 {
+  background-color: #99e2d0;
+  transform: translate(0%);
+  transition: all 600ms;
+  transition-timing-function: ease-in-out;
+}
+#checkmenu1:checked + .ball6 > .ball6icon {
   transform: rotate(1turn);
   transition: 600ms;
   transition-timing-function: ease-in-out;

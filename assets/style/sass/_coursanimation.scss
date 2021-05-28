@@ -284,6 +284,19 @@ input {
   width: 100%;
 }
 
+.check_zone {
+  border: 0px solid blue;
+  background-color: white;
+  color: black;
+  height: 58px;
+  display: flex;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 //   overflow: hidden;
 // white-space: nowrap;
 // text-overflow: ellipsis;
@@ -302,6 +315,24 @@ input {
 // position si ball dans le label : transform: translate(500%, -34%);
 
 #checkmenu {
+  display: none;
+
+  &:checked {
+    & + .ball6 {
+      background-color: $tertiaire;
+      transform: translate(0%);
+      transition: all 600ms;
+      transition-timing-function: ease-in-out;
+    }
+    & + .ball6 > .ball6icon {
+      transform: rotate(1turn);
+      transition: 600ms;
+      transition-timing-function: ease-in-out;
+    }
+  }
+}
+
+#checkmenu1 {
   display: none;
 
   &:checked {
