@@ -409,16 +409,13 @@
 
 .conteneur-menu_bloc_content {
   display: flex;
-  flex-direction: column;
-  width: 91.5%;
-  min-width: 91.5%;
-  max-width: 91.5%;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
   margin: auto;
   border-radius: 15px;
-  padding: 14px;
   background-color: white;
-  height: 40px;
-  gap: 8px;
   text-align: left;
   justify-content: space-between;
   -webkit-tap-highlight-color: transparent;
@@ -464,4 +461,85 @@
   margin: auto;
   background-color: $grey;
   border: 0px solid blue;
+}
+
+.menu-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 14px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.conteneur-menu_bloc_content_top {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.conteneur-menu_bloc_content_bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+}
+
+// div de la green box
+.menu-right {
+  display: flex;
+}
+
+// div de l'animations greenbox
+.greencheckslide {
+  height: auto;
+  min-width: 0px;
+  width: 0px;
+  border-radius: 0px 15px 15px 0px;
+  background-color: $tertiaire;
+  transition: all 600ms;
+}
+
+.greencheckslide-icon {
+  display: flex;
+  position: relative;
+  bottom: 3.3px;
+  height: 110%;
+  font-size: 1.12em;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+// animation greencheckbox
+#checkmenu1,
+#checkmenu2,
+#checkmenu3,
+#checkmenu4,
+#checkmenu5,
+#checkmenu6,
+#checkmenu7,
+#checkmenu8,
+#checkmenu9,
+#checkmenu10 {
+  display: none;
+
+  &:checked {
+    // animation de la boite verte
+    & + .greencheckslide {
+      background-color: $tertiaire;
+      width: 58px;
+      min-width: 58px;
+      transition: all 600ms;
+      transition-timing-function: ease-in-out;
+    }
+    // animation de l'icone de la boite verte
+    & + .greencheckslide > .greencheckslide-icon {
+      transform: rotate(1turn);
+      transition: all 600ms;
+      transition-timing-function: ease-in-out;
+    }
+  }
 }
