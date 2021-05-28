@@ -352,20 +352,6 @@
 }
 
 // Conteneur menu texte
-.conteneur-menu {
-  display: flex;
-  position: relative;
-  bottom: 40px;
-  flex-direction: column;
-  justify-content: space-between;
-  max-width: 500px;
-  height: auto;
-  padding: 20px 22px 0px;
-  margin: auto;
-  background-color: $grey;
-  border-radius: 35px 35px 0px 0px;
-  border: 0px solid blue;
-}
 
 .conteneur-menu_card_text {
   display: flex;
@@ -410,6 +396,7 @@
 .conteneur-menu_bloc_title {
   font-size: 0.82em;
   font-weight: 300;
+  margin-left: 6px;
 }
 
 .conteneur-menu_bloc_title_underline {
@@ -417,14 +404,15 @@
   background-color: $tertiaire;
   height: 4px;
   width: 45px;
+  margin-left: 6px;
 }
 
 .conteneur-menu_bloc_content {
   display: flex;
   flex-direction: column;
-  width: 90%;
-  min-width: 90%;
-  max-width: 90%;
+  width: 91.5%;
+  min-width: 91.5%;
+  max-width: 91.5%;
   margin: auto;
   border-radius: 15px;
   padding: 14px;
