@@ -68,6 +68,7 @@
   position: absolute;
   right: 0;
   top: -15px;
+  transition: all 600ms;
 }
 
 .greencheck-icon {
@@ -95,16 +96,43 @@
   display: none;
 
   &:checked {
+    // animation de la boite verte
     & + .greencheck {
       background-color: $tertiaire;
       transform: translate(27%);
       transition: all 600ms;
       transition-timing-function: ease-in-out;
     }
+    // animation de l'icone de la boite verte
     & + .greencheck > .greencheck-icon {
       transform: rotate(1turn);
       transition: 600ms;
       transition-timing-function: ease-in-out;
     }
   }
+}
+
+// animation texte bottom
+
+#checkmenu1 {
+  &:checked {
+    .bottom1 {
+      width: calc(100% - 57px);
+      transition: 600ms;
+    }
+  }
+}
+
+// texte à animer lors du check (top & bottom)
+
+.conteneur-menu_bloc_content_top {
+  display: flex;
+  gap: 10px;
+  justify-content: left;
+}
+
+.conteneur-menu_bloc_content_bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
 }

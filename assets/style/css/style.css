@@ -24,7 +24,7 @@ body {
   height: 64px;
   max-width: 500px;
   justify-content: center;
-  padding: 0px 18px 0px;
+  padding: 0px 17px 0px;
   display: flex;
   margin: auto;
   border: 0px solid blue;
@@ -39,7 +39,7 @@ body {
   width: auto;
   height: auto;
   gap: 0px;
-  padding: 20px 18px 56px;
+  padding: 20px 17px 56px;
   justify-content: center;
   align-items: center;
   background-color: #f6f6f6;
@@ -54,7 +54,7 @@ body {
   width: auto;
   height: 51px;
   gap: 10px;
-  padding: 0px 18px 0px;
+  padding: 0px 17px 0px;
   justify-content: center;
   align-items: center;
   background-color: #eaeaea;
@@ -71,7 +71,7 @@ body {
   justify-content: space-between;
   max-width: 500px;
   height: auto;
-  padding: 20px 18px 37px;
+  padding: 20px 17px 37px;
   margin: auto;
   background-color: white;
   border-radius: 0px;
@@ -84,7 +84,7 @@ body {
   justify-content: space-between;
   max-width: 500px;
   height: auto;
-  padding: 28px 18px 34px;
+  padding: 28px 17px 34px;
   margin: auto;
   background-color: #f6f6f6;
   border-radius: 0px;
@@ -99,7 +99,7 @@ body {
   justify-content: space-between;
   max-width: 500px;
   height: auto;
-  padding: 20px 18px 0px;
+  padding: 20px 17px 0px;
   margin: auto;
   background-color: #f6f6f6;
   border-radius: 35px 35px 0px 0px;
@@ -112,7 +112,7 @@ body {
   justify-content: space-between;
   max-width: 500px;
   height: auto;
-  padding: 22px 25px 14px;
+  padding: 22px 24px 14px;
   margin-bottom: 7px;
   margin: auto;
   background-color: #353535;
@@ -536,18 +536,6 @@ body {
   text-overflow: ellipsis;
 }
 
-.conteneur-menu_bloc_content_top {
-  display: flex;
-  gap: 10px;
-  justify-content: left;
-}
-
-.conteneur-menu_bloc_content_bottom {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-}
-
 .conteneur-menu_bloc_content_title {
   font-size: 0.9em;
   font-weight: 400;
@@ -674,6 +662,7 @@ body {
   position: absolute;
   right: 0;
   top: -15px;
+  transition: all 600ms;
 }
 
 .greencheck-icon {
@@ -728,6 +717,23 @@ body {
   transform: rotate(1turn);
   transition: 600ms;
   transition-timing-function: ease-in-out;
+}
+
+#checkmenu1:checked .bottom1 {
+  width: calc(100% - 57px);
+  transition: 600ms;
+}
+
+.conteneur-menu_bloc_content_top {
+  display: flex;
+  gap: 10px;
+  justify-content: left;
+}
+
+.conteneur-menu_bloc_content_bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 .container {
