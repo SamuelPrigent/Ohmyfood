@@ -298,7 +298,7 @@ body {
 #checkfav4:checked + .change-icon > .heartcolor2 {
   display: initial;
   animation: bump;
-  animation-duration: 500ms;
+  animation-duration: 380ms;
 }
 
 @keyframes bump {
@@ -307,7 +307,7 @@ body {
     opacity: 1;
   }
   50% {
-    font-size: 1.4em;
+    font-size: 1.36em;
     opacity: 0.9;
     animation: ease-in;
   }
@@ -319,9 +319,15 @@ body {
 }
 .heartcolor2 {
   content: "<i class=" fas fa-heart ">2</i>";
-  color: #ff79da;
   font-size: 1.2em;
   display: none;
+  background: -moz-linear-gradient(top, #ff6ef6 0%, #9356dc 100%);
+  background: -webkit-linear-gradient(top, #ff6ef6 0%, #9356dc 100%);
+  background: linear-gradient(to bottom, #ff6ef6 0%, #9356dc 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .heartcolor {
@@ -334,7 +340,7 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-  left: 19px;
+  left: 17px;
   width: 70px;
   height: auto;
   text-align: left;
