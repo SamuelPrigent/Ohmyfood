@@ -22,7 +22,7 @@
     <!-- Liens style CSS personnel -->
     <link rel="stylesheet" href="assets/style/css/style.css" />  
     <!-- Nom de l'onglet du site -->
-    <title>À la française</title>  
+    <title>La note enchantée</title>  
 </head>
 
 <!-- Body FULL PAGE -->
@@ -44,7 +44,7 @@
         <div class="conteneur-menu-head_card" id="r5">
         
             <div class="conteneur-menu-head_card_paddingratio">
-                <img alt="restaurant" src="assets/images/restaurants/restaurant3.jpg"/>
+                <img alt="restaurant" src="assets/images/restaurants/restaurant2.jpg"/>
             </div>
 
         </div>
@@ -56,9 +56,16 @@
 <section class="conteneur-menu">
 
     <div class="conteneur-menu_card_text"> <!-- classe à renommer plus tard ?-->
-        <h3 class="conteneur-menu_card_text_title">À la française</h3>
-        <div class="heartcolor"><i class="far fa-heart"></i></div>
-    </div>
+        
+        <h3 class="conteneur-menu_card_text_title">La note enchantée</h3>
+
+        <label class="menu_text_right" for="checkfav">
+            <input  id="checkfav" type="checkbox">
+            <div class="change-icon">
+                <i class=" far fa-heart heartcolor"></i>
+                <i class=" fas fa-heart heartcolor2"></i>
+            </div>
+        </label>
 
     </div>
 
@@ -73,11 +80,11 @@
 
         <div class="menu-left">
             <div class="conteneur-menu_bloc_content_top">
-                <p class="conteneur-menu_bloc_content_title">Tartare de poulpe acidulé</p>
+                <p class="conteneur-menu_bloc_content_title">Ravioles de foie gras</p>
             </div>
 
             <div class="conteneur-menu_bloc_content_bottom">
-                <p class="conteneur-menu_bloc_content_details">Aux zests d'orange</p>
+                <p class="conteneur-menu_bloc_content_details">Accompagnés de leur crême à la truffe</p>
                 <p class="conteneur-menu_bloc_content_price">25€</p>
             </div>
         </div>
@@ -95,14 +102,14 @@
     <label class="conteneur-menu_bloc_content apparition apparition--meal2" for="checkmenu2">
 
         <div class="menu-left">
-        <div class="conteneur-menu_bloc_content_top">
-            <p class="conteneur-menu_bloc_content_title">Velouté de légumes d'antan</p>
-        </div>
+            <div class="conteneur-menu_bloc_content_top">
+                <p class="conteneur-menu_bloc_content_title">Caviar osciètre</p>
+            </div>
 
-        <div class="conteneur-menu_bloc_content_bottom">
-            <p class="conteneur-menu_bloc_content_details">Carottes, panais, topinambour</p>
-            <p class="conteneur-menu_bloc_content_price">35€</p>
-        </div>
+            <div class="conteneur-menu_bloc_content_bottom">
+                <p class="conteneur-menu_bloc_content_details">Sur blini à la farine de blé noir</p>
+                <p class="conteneur-menu_bloc_content_price">35€</p>
+            </div>
         </div>
 
         <div class="menu-right">
@@ -119,11 +126,11 @@
 
         <div class="menu-left">
             <div class="conteneur-menu_bloc_content_top">
-                <p class="conteneur-menu_bloc_content_title">Soupe à l'oignon</p>
+                <p class="conteneur-menu_bloc_content_title">Homard et espuma</p>
             </div>
 
             <div class="conteneur-menu_bloc_content_bottom">
-                <p class="conteneur-menu_bloc_content_details">Revisité</p>
+                <p class="conteneur-menu_bloc_content_details">Marinées aux zests d'orange</p>
                 <p class="conteneur-menu_bloc_content_price">20€</p>
             </div>
         </div>
@@ -138,25 +145,16 @@
     </label>
 
 
-    </div> <!-- fin entrée-->
-
-    <div class="conteneur-menu_bloc" id="plats">
-
-    <div class="conteneur-menu_bloc_header">
-        <div class="conteneur-menu_bloc_title">PLATS</div>
-        <div class="conteneur-menu_bloc_title_underline"></div>
-    </div>
-
-    <label class="conteneur-menu_bloc_content apparition apparition--meal1" for="checkmenu4">
+    <label class="conteneur-menu_bloc_content apparition apparition--meal4" for="checkmenu4">
 
         <div class="menu-left">
             <div class="conteneur-menu_bloc_content_top">
-                <p class="conteneur-menu_bloc_content_title">Coquilles Saint-Jacques</p>
+                <p class="conteneur-menu_bloc_content_title">Foie gras de canard cuit entier</p>
             </div>
 
             <div class="conteneur-menu_bloc_content_bottom">
-                <p class="conteneur-menu_bloc_content_details">Accompagnés d'une purée de panais</p>
-                <p class="conteneur-menu_bloc_content_price">40€</p>
+                <p class="conteneur-menu_bloc_content_details">Confiture de figue et pain toasté</p>
+                <p class="conteneur-menu_bloc_content_price">35€</p>
             </div>
         </div>
 
@@ -169,17 +167,25 @@
 
     </label>
 
+    </div> <!-- fin entrée-->
 
-    <label class="conteneur-menu_bloc_content apparition apparition--meal2" for="checkmenu5">
+    <div class="conteneur-menu_bloc" id="plats">
 
-        <div class="menu-left" >
+    <div class="conteneur-menu_bloc_header">
+        <div class="conteneur-menu_bloc_title">PLATS</div>
+        <div class="conteneur-menu_bloc_title_underline"></div>
+    </div>
+
+    <label class="conteneur-menu_bloc_content apparition apparition--meal1" for="checkmenu5">
+
+        <div class="menu-left">
             <div class="conteneur-menu_bloc_content_top">
-                <p class="conteneur-menu_bloc_content_title">Magret de canard</p>
+                <p class="conteneur-menu_bloc_content_title">Noix de coquilles Saint-Jacques</p>
             </div>
 
             <div class="conteneur-menu_bloc_content_bottom">
-                <p class="conteneur-menu_bloc_content_details">Et parmentier de pommes de terres</p>
-                <p class="conteneur-menu_bloc_content_price">35€</p>
+                <p class="conteneur-menu_bloc_content_details">Sur lit de purée de céleri-rave</p>
+                <p class="conteneur-menu_bloc_content_price">40€</p>
             </div>
         </div>
 
@@ -193,21 +199,44 @@
     </label>
 
 
-    <label class="conteneur-menu_bloc_content apparition apparition--meal3" for="checkmenu6">
+    <label class="conteneur-menu_bloc_content apparition apparition--meal2" for="checkmenu6">
 
-        <div class="menu-left" >
+        <div class="menu-left">
             <div class="conteneur-menu_bloc_content_top">
-                <p class="conteneur-menu_bloc_content_title">Pigeonneau d'Ile-et-vilaine</p>
+                <p class="conteneur-menu_bloc_content_title">Langoustine poêlée</p>
             </div>
 
             <div class="conteneur-menu_bloc_content_bottom">
-                <p class="conteneur-menu_bloc_content_details">Sur son lit de gnocchis aux légumes</p>
-                <p class="conteneur-menu_bloc_content_price">44€</p>
+                <p class="conteneur-menu_bloc_content_details">Purée de patate douce</p>
+                <p class="conteneur-menu_bloc_content_price">35€</p>
             </div>
         </div>
 
         <div class="menu-right">
             <input  id="checkmenu6" type="checkbox">
+            <div class="greencheckslide">
+                <div class="greencheckslide-icon"><i class="fas fa-check-circle"></i></div>
+            </div>
+        </div>
+
+    </label>
+
+
+    <label class="conteneur-menu_bloc_content apparition apparition--meal3" for="checkmenu7">
+
+        <div class="menu-left">
+            <div class="conteneur-menu_bloc_content_top">
+                <p class="conteneur-menu_bloc_content_title">Mijotée de queue de boeuf</p>
+            </div>
+
+            <div class="conteneur-menu_bloc_content_bottom">
+                <p class="conteneur-menu_bloc_content_details">Et riz sauvage au zests de citron</p>
+                <p class="conteneur-menu_bloc_content_price">44€</p>
+            </div>
+        </div>
+
+        <div class="menu-right">
+            <input  id="checkmenu7" type="checkbox">
             <div class="greencheckslide">
                 <div class="greencheckslide-icon"><i class="fas fa-check-circle"></i></div>
             </div>
@@ -225,39 +254,16 @@
         <div class="conteneur-menu_bloc_title_underline"></div>
     </div>
 
-    <label class="conteneur-menu_bloc_content apparition apparition--meal1" for="checkmenu7">
+    <label class="conteneur-menu_bloc_content apparition apparition--meal1" for="checkmenu8">
 
-        <div class="menu-left" >
+        <div class="menu-left">
             <div class="conteneur-menu_bloc_content_top">
-                <p class="conteneur-menu_bloc_content_title">Pétales de violettes glacés</p>
+                <p class="conteneur-menu_bloc_content_title">Macaron noisette et chocolat</p>
             </div>
 
             <div class="conteneur-menu_bloc_content_bottom">
-                <p class="conteneur-menu_bloc_content_details">Et purée de noisettes</p>
+                <p class="conteneur-menu_bloc_content_details">Glace au caramel brun et sel de guérande</p>
                 <p class="conteneur-menu_bloc_content_price">18€</p>
-            </div>
-        </div>
-
-        <div class="menu-right">
-            <input  id="checkmenu7" type="checkbox">
-            <div class="greencheckslide">
-                <div class="greencheckslide-icon"><i class="fas fa-check-circle"></i></div>
-            </div>
-        </div>
-
-    </label>
-
-
-    <label class="conteneur-menu_bloc_content apparition apparition--meal2" for="checkmenu8">
-
-        <div class="menu-left" >
-            <div class="conteneur-menu_bloc_content_top">
-                <p class="conteneur-menu_bloc_content_title">Fondant au chocolat</p>
-            </div>
-
-            <div class="conteneur-menu_bloc_content_bottom">
-                <p class="conteneur-menu_bloc_content_details">Revisité</p>
-                <p class="conteneur-menu_bloc_content_price">22€</p>
             </div>
         </div>
 
@@ -271,21 +277,44 @@
     </label>
 
 
-    <label class="conteneur-menu_bloc_content apparition apparition--meal3" for="checkmenu9">
+    <label class="conteneur-menu_bloc_content apparition apparition--meal2" for="checkmenu9">
 
-        <div class="menu-left" >
+        <div class="menu-left">
             <div class="conteneur-menu_bloc_content_top">
-                <p class="conteneur-menu_bloc_content_title">Millefeuille croustillant</p>
+                <p class="conteneur-menu_bloc_content_title">Baba au rhum revisité</p>
             </div>
 
             <div class="conteneur-menu_bloc_content_bottom">
-                <p class="conteneur-menu_bloc_content_details">Myrtilles et pâte d'amande</p>
-                <p class="conteneur-menu_bloc_content_price">23€</p>
+                <p class="conteneur-menu_bloc_content_details">Avec son coulis de citron</p>
+                <p class="conteneur-menu_bloc_content_price">22€</p>
             </div>
         </div>
 
         <div class="menu-right">
             <input  id="checkmenu9" type="checkbox">
+            <div class="greencheckslide">
+                <div class="greencheckslide-icon"><i class="fas fa-check-circle"></i></div>
+            </div>
+        </div>
+
+    </label>
+
+
+    <label class="conteneur-menu_bloc_content apparition apparition--meal3" for="checkmenu10">
+
+        <div class="menu-left">
+        <div class="conteneur-menu_bloc_content_top">
+            <p class="conteneur-menu_bloc_content_title">Tarte au citron meringuée</p>
+        </div>
+
+        <div class="conteneur-menu_bloc_content_bottom">
+            <p class="conteneur-menu_bloc_content_details">Destructurée</p>
+            <p class="conteneur-menu_bloc_content_price">23€</p>
+        </div>
+        </div>
+
+        <div class="menu-right">
+            <input  id="checkmenu10" type="checkbox">
             <div class="greencheckslide">
                 <div class="greencheckslide-icon"><i class="fas fa-check-circle"></i></div>
             </div>

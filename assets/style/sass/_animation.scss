@@ -45,36 +45,7 @@
 
 // animation green checkbox meal
 
-#checkmenu1,
-#checkmenu2,
-#checkmenu3,
-#checkmenu4,
-#checkmenu5,
-#checkmenu6,
-#checkmenu7,
-#checkmenu8,
-#checkmenu9,
-#checkmenu10 {
-  display: none;
-
-  &:checked {
-    // animation de la boite verte
-    & + .greencheckslide {
-      background-color: $tertiaire;
-      width: 58px;
-      min-width: 58px;
-      transition: all 600ms;
-      transition-timing-function: ease-in-out;
-    }
-    // animation de l'icone de la boite verte
-    & + .greencheckslide > .greencheck-icon {
-      transform: rotate(1turn);
-      transition: 600ms;
-      transition-timing-function: ease-in-out;
-    }
-  }
-}
-
+/*
 .check_zone {
   border: 0px solid blue;
   background-color: white;
@@ -87,60 +58,7 @@
   flex-direction: column;
   gap: 7px;
 }
-
-.greencheck {
-  height: 70px;
-  min-width: 68px;
-  width: 68px;
-  border-radius: 0% 25% 25% 0%;
-  background-color: $tertiaire;
-  transform: translate(123%);
-  position: absolute;
-  right: 0;
-  top: -15px;
-  transition: all 600ms;
-}
-
-.greencheck-icon {
-  display: flex;
-  position: relative;
-  bottom: 3.3px;
-  right: 1.5px;
-  height: 110%;
-  font-size: 1.12em;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-
-#checkmenu1,
-#checkmenu2,
-#checkmenu3,
-#checkmenu4,
-#checkmenu5,
-#checkmenu6,
-#checkmenu7,
-#checkmenu8,
-#checkmenu9,
-#checkmenu10 {
-  display: none;
-
-  &:checked {
-    // animation de la boite verte
-    & + .greencheck {
-      background-color: $tertiaire;
-      transform: translate(27%);
-      transition: all 600ms;
-      transition-timing-function: ease-in-out;
-    }
-    // animation de l'icone de la boite verte
-    & + .greencheck > .greencheck-icon {
-      transform: rotate(1turn);
-      transition: 600ms;
-      transition-timing-function: ease-in-out;
-    }
-  }
-}
+*/
 
 // animation texte bottom
 
@@ -151,19 +69,4 @@
       transition: 600ms;
     }
   }
-}
-
-// texte à animer lors du check (top & bottom)
-
-.conteneur-menu_bloc_content_top {
-  display: flex;
-  gap: 10px;
-  width: 100%;
-}
-
-.conteneur-menu_bloc_content_bottom {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  gap: 10px;
 }

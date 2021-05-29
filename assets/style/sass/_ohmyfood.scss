@@ -162,6 +162,80 @@
   object-position: 50% 100%;
 }
 
+#checkfav,
+#checkfav2,
+#checkfav3,
+#checkfav4 {
+  display: none;
+}
+
+#checkfav,
+#checkfav2,
+#checkfav3,
+#checkfav4 {
+  &:checked + .change-icon > .heartcolor {
+    display: none;
+  }
+  &:checked + .change-icon > .heartcolor2 {
+    display: initial;
+    animation: bump;
+    animation-duration: 500ms;
+  }
+}
+
+@keyframes bump {
+  0% {
+    font-size: 1em;
+    opacity: 1;
+  }
+  50% {
+    font-size: 1.4em;
+    opacity: 0.9;
+    animation: ease-in;
+  }
+  100% {
+    font-size: 1em;
+    opacity: 1;
+    animation: ease-out;
+  }
+}
+
+.heartcolor2 {
+  content: "<i class=" fas fa-heart ">2</i>";
+  color: $secondaire;
+  font-size: 1.2em;
+  display: none;
+}
+
+.heartcolor {
+  font-size: 1.2em;
+  color: #000000;
+}
+
+.conteneur-restaurant_card_text_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 19px;
+  width: 70px;
+  height: auto;
+  text-align: left;
+  border: 0px solid blue;
+}
+
+.menu_text_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 19px;
+  width: 58px;
+  height: auto;
+  text-align: left;
+  border: 0px solid blue;
+}
+
 .conteneur-restaurant_bloc {
   display: flex;
   flex-wrap: wrap;
@@ -213,15 +287,6 @@
   font-size: 0.86em;
 }
 
-.conteneur-restaurant_card_text_right {
-  display: flex;
-  align-items: center;
-  width: auto;
-  height: auto;
-  text-align: left;
-  border: 0px solid black;
-}
-
 .conteneur-restaurant_card_text_title {
   color: #000000;
   text-align: left;
@@ -247,11 +312,6 @@
   width: 100%;
   object-fit: cover;
   position: absolute;
-}
-
-.heartcolor {
-  color: #000000;
-  font-size: 1.2em;
 }
 
 // footer
@@ -356,13 +416,14 @@
 .conteneur-menu_card_text {
   display: flex;
   width: auto;
-  height: auto;
+  height: 30px;
   text-align: left;
   padding: 13px 17px 15px 0px;
   gap: 3px;
   margin-top: 4px;
   margin-bottom: 25px;
   justify-content: space-between;
+  border: 0px solid blue;
 }
 
 .conteneur-menu_card_text_title {
@@ -512,6 +573,7 @@
   justify-content: center;
   color: white;
   left: 30px;
+  transform: rotate(-220deg);
   transition: all 600ms;
 }
 
@@ -532,14 +594,14 @@
     // animation de la boite verte
     & + .greencheckslide {
       background-color: $tertiaire;
-      width: 58px;
-      min-width: 58px;
+      width: 60px;
+      min-width: 60px;
       transition: all 600ms;
       transition-timing-function: ease-in-out;
     }
     // animation de l'icone de la boite verte
     & + .greencheckslide > .greencheckslide-icon {
-      transform: rotate(1turn);
+      transform: rotate(0deg);
       left: 0px;
       transition: all 600ms;
       transition-timing-function: ease-in-out;
