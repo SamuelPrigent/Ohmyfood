@@ -511,6 +511,8 @@
   align-items: center;
   justify-content: center;
   color: white;
+  left: 30px;
+  transition: all 600ms;
 }
 
 // animation greencheckbox
@@ -538,6 +540,7 @@
     // animation de l'icone de la boite verte
     & + .greencheckslide > .greencheckslide-icon {
       transform: rotate(1turn);
+      left: 0px;
       transition: all 600ms;
       transition-timing-function: ease-in-out;
     }

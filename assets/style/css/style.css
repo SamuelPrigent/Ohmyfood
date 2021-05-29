@@ -615,6 +615,8 @@ body {
   align-items: center;
   justify-content: center;
   color: white;
+  left: 30px;
+  transition: all 600ms;
 }
 
 #checkmenu1,
@@ -656,6 +658,7 @@ body {
 #checkmenu9:checked + .greencheckslide > .greencheckslide-icon,
 #checkmenu10:checked + .greencheckslide > .greencheckslide-icon {
   transform: rotate(1turn);
+  left: 0px;
   transition: all 600ms;
   transition-timing-function: ease-in-out;
 }
