@@ -65,3 +65,17 @@
   min-height: 27px;
   min-width: 27px;
 }
+
+@media screen and (min-width: 670px) {
+  .conteneur-fonctionnement_card {
+    width: 45%;
+    max-width: 45%;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .conteneur-fonctionnement_card {
+    width: 31%;
+    max-width: 31%;
+  }
+}

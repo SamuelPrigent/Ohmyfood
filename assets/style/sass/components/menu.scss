@@ -1,22 +1,33 @@
 // menu head images
 
-.conteneur-menu-head {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  max-width: 500px;
-  height: auto;
-  margin: auto;
-  background-color: $grey;
-  border-radius: 0px;
-  border: 0px solid blue;
-}
-
 .conteneur-menu-head_bloc {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  border: 0px solid blue;
+  position: relative;
+}
+
+.conteneur-menu-head_title {
+  padding: 20px 17px 20px;
+  background: $grey;
+  border: 0px solid blue;
+  width: 93.9%;
+}
+
+.menu_title_text {
+  display: flex;
+  width: auto;
+  height: 30px;
+  text-align: left;
+  padding: 10px 17px 10px 17px;
+  gap: 3px;
+  margin-top: 4px;
+  margin-bottom: 25px;
+  justify-content: space-between;
+  background-color: $grey;
+  border: 0px solid red;
 }
 
 .conteneur-menu-head_card {
@@ -43,7 +54,7 @@
 }
 
 .conteneur-menu-head_card_paddingratio {
-  padding-bottom: 70%;
+  padding-bottom: 65%;
   height: auto;
   width: 100%;
   position: relative;
@@ -55,23 +66,10 @@
   width: 100%;
   object-fit: cover;
   position: absolute;
-  max-width: 500px;
+  object-position: 0% 50%;
 }
 
 // Conteneur menu texte
-
-.conteneur-menu_card_text {
-  display: flex;
-  width: auto;
-  height: 30px;
-  text-align: left;
-  padding: 13px 17px 15px 0px;
-  gap: 3px;
-  margin-top: 4px;
-  margin-bottom: 25px;
-  justify-content: space-between;
-  border: 0px solid blue;
-}
 
 .conteneur-menu_card_text_title {
   color: #000000;
@@ -163,7 +161,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 500px;
   height: 90px;
   width: 100%;
   margin: auto;
@@ -301,3 +298,23 @@
 //   animation-delay: #{$i * 1}s;
 //  }
 // }
+
+@media screen and (min-width: 520px) {
+  .conteneur-menu-head_card_paddingratio {
+    padding-bottom: 0%;
+    height: 350px;
+    max-height: 350px;
+    width: 100%;
+    position: relative;
+    border: 0px solid blue;
+  }
+
+  .conteneur-menu-head_card_paddingratio img {
+    height: 100%;
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    position: absolute;
+    object-position: 0% 50%;
+  }
+}
