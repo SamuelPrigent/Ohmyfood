@@ -1,0 +1,51 @@
+// footer
+
+// footer
+
+.footer_title {
+  color: white;
+  text-align: left;
+  justify-content: left;
+  font-size: 0.9em;
+  height: 20px;
+  font-weight: 200;
+  margin-bottom: 15px;
+  font-family: "Shrikhand", "Roboto", "Arial";
+  user-select: none;
+}
+
+.conteneur-footer_card {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  flex: 1;
+  min-width: 235px;
+  justify-content: column;
+  margin-bottom: 10px;
+  list-style-type: none;
+  user-select: none;
+  color: white;
+}
+
+.conteneur-footer_card_text {
+  color: white;
+  font-size: 0.84em;
+  line-height: 165%;
+  font-weight: 300;
+  text-align: left;
+  text-decoration: none;
+  list-style-type: none;
+  user-select: none;
+  display: flex;
+  gap: 9px;
+}
+
+.iconcolor {
+  color: white;
+  font-size: 0.7em;
+  display: flex;
+  height: auto;
+  width: 12px;
+  align-items: center;
+  justify-content: center;
+}

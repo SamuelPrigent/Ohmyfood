@@ -1,18 +1,24 @@
 // Ohmyfood Style - Centralisation des modules du projets
 
-// Variables
-@import "components/color";
-
+// variables
 @import "components/variable.scss";
 
-@import "components/general.scss";
+@import "components/color";
 
 // Components
+@import "components/general.scss";
+
 @import "components/conteneur.scss";
 
-@import "components/ohmyfood.scss";
-
 @import "components/button.scss";
+
+@import "components/fonctionnement.scss";
+
+@import "components/restaurant.scss";
+
+@import "components/menu.scss";
+
+@import "components/footer.scss";
 
 // Animation
 @import "components/animation.scss";

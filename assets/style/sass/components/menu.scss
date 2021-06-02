@@ -1,0 +1,257 @@
+// menu head images
+
+.conteneur-menu-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 500px;
+  height: auto;
+  margin: auto;
+  background-color: $grey;
+  border-radius: 0px;
+  border: 0px solid blue;
+}
+
+.conteneur-menu-head_bloc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.conteneur-menu-head_card {
+  display: grid;
+  display: column;
+  width: 100%;
+  text-align: left;
+  background-color: white;
+  text-decoration: none;
+  border-radius: 0px 0px 0px 0px;
+}
+
+// div of fav icon in head of menu
+.menu_text_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 19px;
+  width: 58px;
+  height: auto;
+  text-align: left;
+  border: 0px solid blue;
+}
+
+.conteneur-menu-head_card_paddingratio {
+  padding-bottom: 70%;
+  height: auto;
+  width: 100%;
+  position: relative;
+  border: 0px solid blue;
+}
+
+.conteneur-menu-head_card_paddingratio img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  max-width: 500px;
+}
+
+// Conteneur menu texte
+
+.conteneur-menu_card_text {
+  display: flex;
+  width: auto;
+  height: 30px;
+  text-align: left;
+  padding: 13px 17px 15px 0px;
+  gap: 3px;
+  margin-top: 4px;
+  margin-bottom: 25px;
+  justify-content: space-between;
+  border: 0px solid blue;
+}
+
+.conteneur-menu_card_text_title {
+  color: #000000;
+  text-align: left;
+  font-size: 1.3em;
+  font-weight: 300;
+  font-family: "Shrikhand", "Roboto", "Arial";
+  text-decoration: none;
+}
+
+.conteneur-menu_bloc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  border: 0px solid green;
+}
+
+.conteneur-menu_bloc_header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  margin: auto;
+  border: 0px solid green;
+}
+
+.conteneur-menu_bloc_title {
+  font-size: 0.82em;
+  font-weight: 300;
+  margin-left: 6px;
+}
+
+.conteneur-menu_bloc_title_underline {
+  display: flex;
+  background-color: $tertiaire;
+  height: 4px;
+  width: 45px;
+  margin-left: 6px;
+}
+
+.conteneur-menu_bloc_content {
+  display: flex;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  border-radius: 15px;
+  background-color: white;
+  text-align: left;
+  justify-content: space-between;
+  -webkit-tap-highlight-color: transparent;
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.14);
+  -webkit-box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.conteneur-menu_bloc_content_title {
+  font-size: 0.9em;
+  font-weight: 400;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.conteneur-menu_bloc_content_details {
+  font-size: 0.75em;
+  font-weight: 300;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.conteneur-menu_bloc_content_price {
+  font-size: 0.75em;
+  font-weight: 600;
+  color: $dark-grey;
+}
+
+.conteneur-menu_bloc-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  height: 90px;
+  width: 100%;
+  margin: auto;
+  background-color: $grey;
+  border: 0px solid blue;
+}
+
+.menu-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 14px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.conteneur-menu_bloc_content_top {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.conteneur-menu_bloc_content_bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+}
+
+// div de la green box
+.menu-right {
+  display: flex;
+}
+
+// div de l'animations greenbox
+.greencheckslide {
+  height: auto;
+  min-width: 0px;
+  width: 0px;
+  border-radius: 0px 15px 15px 0px;
+  background-color: $tertiaire;
+  transition: all 600ms;
+}
+
+.greencheckslide-icon {
+  display: flex;
+  position: relative;
+  bottom: 3.3px;
+  height: 110%;
+  font-size: 1.12em;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  left: 30px;
+  transform: rotate(-220deg);
+  transition: all 600ms;
+}
+
+// animation greencheckbox
+#checkmenu1,
+#checkmenu2,
+#checkmenu3,
+#checkmenu4,
+#checkmenu5,
+#checkmenu6,
+#checkmenu7,
+#checkmenu8,
+#checkmenu9,
+#checkmenu10 {
+  display: none;
+
+  &:checked {
+    // animation de la boite verte
+    & + .greencheckslide {
+      background-color: $tertiaire;
+      width: 60px;
+      min-width: 60px;
+      transition: all 600ms;
+      transition-timing-function: ease-in-out;
+    }
+    // animation de l'icone de la boite verte
+    & + .greencheckslide > .greencheckslide-icon {
+      transform: rotate(0deg);
+      left: 0px;
+      transition: all 600ms;
+      transition-timing-function: ease-in-out;
+    }
+  }
+}
