@@ -195,6 +195,8 @@
   gap: 10px;
 }
 
+// ANIMATIONS
+
 // div de la green box
 .menu-right {
   display: flex;
@@ -255,3 +257,47 @@
     }
   }
 }
+
+// animation apparition
+.apparition {
+  animation-name: apparition;
+  animation-duration: 900ms;
+  animation-fill-mode: both;
+
+  &--meal1 {
+    animation-delay: 100ms;
+  }
+  &--meal2 {
+    animation-delay: 220ms;
+  }
+  &--meal3 {
+    animation-delay: 340ms;
+  }
+  &--meal4 {
+    animation-delay: 460ms;
+  }
+}
+
+@keyframes apparition {
+  0% {
+    transform: translateY(19%);
+    opacity: 0;
+  }
+  67% {
+    animation: cubic-bezier(0, 0.88, 0.64, 0.99);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+    animation: cubic-bezier(0, 0.88, 0.64, 0.99);
+    animation-fill-mode: both;
+  }
+}
+
+// fonction que j'arrive pas a comprendre et a faire fonctionner pour faire un décalage de delay
+// @for $i from 1 through 6 {
+// nth-child#{$i + 1} {
+//   animation-delay: #{$i * 1}s;
+//  }
+// }
