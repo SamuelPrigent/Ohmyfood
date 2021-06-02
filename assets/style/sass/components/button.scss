@@ -24,13 +24,15 @@
 .button-commande {
   display: flex;
   padding: 0px 45px 0px;
-  justify-content: center;
-  align-items: center;
   height: 48px;
   border-radius: 24px;
+  justify-content: center;
+  align-items: center;
+  // color & font
   font-family: "Roboto", "Arial";
-  color: white;
   font-size: 0.8em;
+  user-select: none;
+  color: white;
   background: #ff79da;
   background: -moz-linear-gradient(top, #ff79da 0%, #ff6ef6 0%, #9356dc 100%);
   background: -webkit-linear-gradient(

@@ -298,7 +298,7 @@ body {
 #checkfav4:checked + .change-icon > .heartcolor2 {
   display: initial;
   animation: bump;
-  animation-duration: 380ms;
+  animation-duration: 360ms;
 }
 
 @keyframes bump {
@@ -307,7 +307,7 @@ body {
     opacity: 1;
   }
   50% {
-    font-size: 1.36em;
+    font-size: 1.34em;
     opacity: 0.9;
     animation: ease-in;
   }
@@ -342,18 +342,6 @@ body {
   position: relative;
   left: 17px;
   width: 70px;
-  height: auto;
-  text-align: left;
-  border: 0px solid blue;
-}
-
-.menu_text_right {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  left: 19px;
-  width: 58px;
   height: auto;
   text-align: left;
   border: 0px solid blue;
@@ -511,6 +499,18 @@ body {
   background-color: white;
   text-decoration: none;
   border-radius: 0px 0px 0px 0px;
+}
+
+.menu_text_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 19px;
+  width: 58px;
+  height: auto;
+  text-align: left;
+  border: 0px solid blue;
 }
 
 .conteneur-menu-head_card_paddingratio {
@@ -756,13 +756,14 @@ body {
 .button-commande {
   display: flex;
   padding: 0px 45px 0px;
-  justify-content: center;
-  align-items: center;
   height: 48px;
   border-radius: 24px;
+  justify-content: center;
+  align-items: center;
   font-family: "Roboto", "Arial";
-  color: white;
   font-size: 0.8em;
+  user-select: none;
+  color: white;
   background: #ff79da;
   background: -moz-linear-gradient(top, #ff79da 0%, #ff6ef6 0%, #9356dc 100%);
   background: -webkit-linear-gradient(top, #ff79da 0%, #ff6ef6 0%, #9356dc 100%);

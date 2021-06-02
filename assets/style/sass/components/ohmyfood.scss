@@ -145,7 +145,7 @@
   min-width: 27px;
 }
 
-// Restaurant
+// Restaurant img position
 #r1 img {
   object-position: 50% 90%;
 }
@@ -181,7 +181,7 @@
   &:checked + .change-icon > .heartcolor2 {
     display: initial;
     animation: bump;
-    animation-duration: 380ms;
+    animation-duration: 360ms;
   }
 }
 
@@ -191,7 +191,7 @@
     opacity: 1;
   }
   50% {
-    font-size: 1.36em;
+    font-size: 1.34em;
     opacity: 0.9;
     animation: ease-in;
   }
@@ -227,18 +227,6 @@
   position: relative;
   left: 17px;
   width: 70px;
-  height: auto;
-  text-align: left;
-  border: 0px solid blue;
-}
-
-.menu_text_right {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  left: 19px;
-  width: 58px;
   height: auto;
   text-align: left;
   border: 0px solid blue;
@@ -401,6 +389,19 @@
   background-color: white;
   text-decoration: none;
   border-radius: 0px 0px 0px 0px;
+}
+
+// div of fav icon in head of menu
+.menu_text_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 19px;
+  width: 58px;
+  height: auto;
+  text-align: left;
+  border: 0px solid blue;
 }
 
 .conteneur-menu-head_card_paddingratio {
