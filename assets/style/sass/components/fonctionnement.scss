@@ -1,6 +1,6 @@
 // Fonctionnement
 
-.conteneur-fonctionnement_bloc {
+.fonctionnement_bloc {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -9,7 +9,7 @@
   margin-bottom: 30px;
 }
 
-.conteneur-fonctionnement_card {
+.fonctionnement_card {
   display: flex;
   margin: auto;
   width: 94%;
@@ -25,7 +25,7 @@
   border: 0px solid black;
 }
 
-.conteneur-fonctionnement_card_move {
+.fonctionnement_card_move {
   display: flex;
   gap: 18px;
   align-items: center;
@@ -37,14 +37,14 @@
   border: 0px solid blue;
 }
 
-.conteneur-fonctionnement_card_text {
+.fonctionnement_card_text {
   font-size: 1em;
   color: black;
   display: flex;
   justify-content: left;
 }
 
-.circle-purple {
+.fonctionnement_circle-purple {
   display: flex;
   border-radius: 50%;
   background-color: $primaire;
@@ -67,14 +67,14 @@
 }
 
 @media screen and (min-width: 670px) {
-  .conteneur-fonctionnement_card {
+  .fonctionnement_card {
     width: 45%;
     max-width: 45%;
   }
 }
 
 @media screen and (min-width: 950px) {
-  .conteneur-fonctionnement_card {
+  .fonctionnement_card {
     width: 31%;
     max-width: 31%;
   }

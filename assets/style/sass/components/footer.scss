@@ -9,12 +9,12 @@
   font-size: 0.9em;
   height: 20px;
   font-weight: 200;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   font-family: "Shrikhand", "Roboto", "Arial";
   user-select: none;
 }
 
-.conteneur-footer_card {
+.footer_card {
   display: flex;
   flex-direction: column;
   height: auto;
@@ -27,7 +27,7 @@
   color: white;
 }
 
-.conteneur-footer_card_text {
+.footer_card_text {
   color: white;
   font-size: 0.84em;
   line-height: 165%;
@@ -40,7 +40,7 @@
   gap: 9px;
 }
 
-.iconcolor {
+.footer-icon {
   color: white;
   font-size: 0.7em;
   display: flex;

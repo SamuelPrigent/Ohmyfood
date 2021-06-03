@@ -1,6 +1,4 @@
-// menu head images
-
-.conteneur-menu-head_bloc {
+.menu-head_bloc {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -9,14 +7,34 @@
   position: relative;
 }
 
-.conteneur-menu-head_title {
-  padding: 20px 17px 20px;
-  background: $grey;
-  border: 0px solid blue;
-  width: 93.9%;
+.menu-head_card {
+  display: grid;
+  display: column;
+  width: 100%;
+  text-align: left;
+  background-color: white;
+  text-decoration: none;
+  border-radius: 0px 0px 0px 0px;
 }
 
-.menu_title_text {
+.menu-head_card_paddingratio {
+  padding-bottom: 65%;
+  height: auto;
+  width: 100%;
+  position: relative;
+  border: 0px solid blue;
+}
+
+.menu-head_card_paddingratio img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  object-position: 0% 50%;
+}
+
+// menu nom du restaurant
+.menu_restaurant-name {
   display: flex;
   width: auto;
   height: 30px;
@@ -30,18 +48,16 @@
   border: 0px solid red;
 }
 
-.conteneur-menu-head_card {
-  display: grid;
-  display: column;
-  width: 100%;
+.menu_restaurant-name_title {
+  color: #000000;
   text-align: left;
-  background-color: white;
+  font-size: 1.3em;
+  font-weight: 300;
+  font-family: "Shrikhand", "Roboto", "Arial";
   text-decoration: none;
-  border-radius: 0px 0px 0px 0px;
 }
 
-// div of fav icon in head of menu
-.menu_text_right {
+.menu_restaurant-name_right {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,34 +69,9 @@
   border: 0px solid blue;
 }
 
-.conteneur-menu-head_card_paddingratio {
-  padding-bottom: 65%;
-  height: auto;
-  width: 100%;
-  position: relative;
-  border: 0px solid blue;
-}
+// fin part name restaurant
 
-.conteneur-menu-head_card_paddingratio img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  position: absolute;
-  object-position: 0% 50%;
-}
-
-// Conteneur menu texte
-
-.conteneur-menu_card_text_title {
-  color: #000000;
-  text-align: left;
-  font-size: 1.3em;
-  font-weight: 300;
-  font-family: "Shrikhand", "Roboto", "Arial";
-  text-decoration: none;
-}
-
-.conteneur-menu_bloc {
+.menu_blocs {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -90,7 +81,7 @@
   border: 0px solid green;
 }
 
-.conteneur-menu_bloc_header {
+.menu_header {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -99,13 +90,13 @@
   border: 0px solid green;
 }
 
-.conteneur-menu_bloc_title {
+.menu_header_title {
   font-size: 0.82em;
   font-weight: 300;
   margin-left: 6px;
 }
 
-.conteneur-menu_bloc_title_underline {
+.menu_header_title_underline {
   display: flex;
   background-color: $tertiaire;
   height: 4px;
@@ -113,7 +104,7 @@
   margin-left: 6px;
 }
 
-.conteneur-menu_bloc_content {
+.menu_bloc {
   display: flex;
   width: 100%;
   min-width: 100%;
@@ -133,7 +124,7 @@
   text-overflow: ellipsis;
 }
 
-.conteneur-menu_bloc_content_title {
+.menu_bloc_title {
   font-size: 0.9em;
   font-weight: 400;
   display: inline-block;
@@ -142,7 +133,7 @@
   text-overflow: ellipsis;
 }
 
-.conteneur-menu_bloc_content_details {
+.menu_bloc_details {
   font-size: 0.75em;
   font-weight: 300;
   display: inline-block;
@@ -151,13 +142,13 @@
   text-overflow: ellipsis;
 }
 
-.conteneur-menu_bloc_content_price {
+.menu_bloc_price {
   font-size: 0.75em;
   font-weight: 600;
   color: $dark-grey;
 }
 
-.conteneur-menu_bloc-button {
+.menu_bloc-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -179,13 +170,13 @@
   text-overflow: ellipsis;
 }
 
-.conteneur-menu_bloc_content_top {
+.menu_bloc_top {
   display: flex;
   gap: 10px;
   width: 100%;
 }
 
-.conteneur-menu_bloc_content_bottom {
+.menu_bloc_bottom {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -300,7 +291,7 @@
 // }
 
 @media screen and (min-width: 520px) {
-  .conteneur-menu-head_card_paddingratio {
+  .menu-head_card_paddingratio {
     padding-bottom: 0%;
     height: 350px;
     max-height: 350px;
@@ -309,7 +300,7 @@
     border: 0px solid blue;
   }
 
-  .conteneur-menu-head_card_paddingratio img {
+  .menu-head_card_paddingratio img {
     height: 100%;
     width: 100%;
     max-height: 350px;

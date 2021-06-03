@@ -1,6 +1,6 @@
 // Restaurant
 
-.conteneur-restaurant_bloc {
+.restaurant_bloc {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -9,7 +9,7 @@
   margin-bottom: 30px;
 }
 
-.conteneur-restaurant_card {
+.restaurant_card {
   display: grid;
   display: column;
   width: 100%;
@@ -23,7 +23,7 @@
   box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.1);
 }
 
-.conteneur-restaurant_card_text_right {
+.restaurant_card_text_right {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,7 +35,7 @@
   border: 0px solid blue;
 }
 
-.conteneur-restaurant_card_text {
+.restaurant_card_text {
   display: flex;
   width: auto;
   height: auto;
@@ -46,7 +46,7 @@
   border: 0px solid blue;
 }
 
-.conteneur-restaurant_card_text_left {
+.restaurant_card_text_left {
   display: flex;
   flex-direction: column;
   width: auto;
@@ -58,12 +58,12 @@
   color: #000000;
 }
 
-.conteneur-restaurant_card_text_left_small {
+.restaurant_card_text_left_small {
   font-weight: 300;
   font-size: 0.86em;
 }
 
-.conteneur-restaurant_card_text_title {
+.restaurant_card_text_title {
   color: #000000;
   text-align: left;
   font-size: 0.9em;
@@ -75,14 +75,14 @@
 }
 
 // ratio images restaurant
-.conteneur-restaurant_card_paddingratio {
+.restaurant_card_paddingratio {
   padding-bottom: 50%;
   height: auto;
   width: 100%;
   position: relative;
 }
 
-.conteneur-restaurant_card_paddingratio img {
+.restaurant_card_paddingratio img {
   border-radius: 16px 16px 0px 0px;
   height: 100%;
   width: 100%;
@@ -167,7 +167,7 @@
 // responsive
 
 @media screen and (min-width: 670px) {
-  .conteneur-restaurant_bloc {
+  .restaurant_bloc {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(auto, 1fr);
