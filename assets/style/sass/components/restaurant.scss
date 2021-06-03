@@ -176,3 +176,16 @@
     gap: 18px;
   }
 }
+
+// etiquette "nouveau"
+.restaurant_new {
+  display: flex;
+  position: absolute;
+  right: 13px;
+  top: 13px;
+  font-size: 0.71em;
+  border-radius: 2px;
+  color: darken($tertiaire, 45%);
+  background-color: $tertiaire;
+  padding: 7px 11px 7px;
+}
