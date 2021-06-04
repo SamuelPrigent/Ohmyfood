@@ -1,0 +1,177 @@
+// Restaurant
+
+.restaurant_bloc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 30px;
+
+  .restaurant_card {
+    display: grid;
+    display: column;
+    width: 100%;
+    text-align: left;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 14px;
+    -webkit-tap-highlight-color: transparent;
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.14);
+    -webkit-box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.1);
+
+    .restaurant_card_text {
+      display: flex;
+      width: auto;
+      height: auto;
+      text-align: left;
+      padding: 13px 23px 15px 17px;
+      gap: 3px;
+      justify-content: space-between;
+      border: 0px solid blue;
+
+      .restaurant_card_text_left {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        text-align: left;
+        gap: 3px;
+        border: 0px solid black;
+        font-weight: 300;
+        color: #000000;
+
+        .restaurant_card_text_title {
+          color: #000000;
+          text-align: left;
+          font-size: 0.9em;
+          font-weight: 700;
+          margin-top: 4px;
+          margin-bottom: 4px;
+          font-family: "Roboto", "Arial";
+          text-decoration: none;
+        }
+
+        .restaurant_card_text_left_small {
+          font-weight: 300;
+          font-size: 0.86em;
+        }
+      }
+
+      .restaurant_card_text_right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left: 17px;
+        width: 70px;
+        height: auto;
+        text-align: left;
+        border: 0px solid blue;
+      }
+    }
+  }
+}
+
+// ratio images restaurant
+.restaurant_card_paddingratio {
+  padding-bottom: 50%;
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+
+.restaurant_card_paddingratio img {
+  border-radius: 16px 16px 0px 0px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+// positions des images
+#r1 img {
+  object-position: 50% 90%;
+}
+
+#r2 img {
+  object-position: 50% 61%;
+}
+
+#r3 img {
+  object-position: 50% 100%;
+}
+
+#r4 img {
+  object-position: 50% 100%;
+}
+
+// div coeur 1 et 2
+.heartcolor2 {
+  content: "<i class=" fas fa-heart ">2</i>";
+  font-size: 1.2em;
+  display: none;
+  @include gradient-heart;
+}
+
+.heartcolor {
+  font-size: 1.2em;
+  color: #000000;
+}
+
+// animation coeur
+.checkfavclass {
+  display: none;
+}
+
+.checkfavclass {
+  &:checked + .change-icon > .heartcolor {
+    display: none;
+  }
+  &:checked + .change-icon > .heartcolor2 {
+    display: initial;
+    animation: bump;
+    animation-duration: 350ms;
+  }
+}
+
+@keyframes bump {
+  0% {
+    font-size: 1em;
+  }
+  70% {
+    font-size: 1.3em;
+    animation: ease-in-out;
+  }
+  100% {
+    font-size: 1em;
+    animation: ease-out;
+  }
+}
+
+// responsive
+
+@media screen and (min-width: 670px) {
+  .restaurant_bloc {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+  }
+}
+
+// etiquette "nouveau"
+.restaurant_new {
+  display: flex;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  font-size: 0.71em;
+  border-radius: 2px;
+  color: darken($tertiaire, 45%);
+  background-color: $tertiaire;
+  padding: 7.5px 11px 7.5px;
+}

@@ -1,0 +1,27 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  height: 50px;
+  border-radius: 25px;
+  font-family: "Roboto", "Arial";
+  color: white;
+  font-size: 0.8em;
+  user-select: none;
+  @include gradient-button;
+}
+
+.presensation-button {
+  margin-top: 21px;
+  padding: 0px 24px 0px;
+}
+
+.menu-button {
+  padding: 0px 48px 0px;
+  height: 50px;
+}
+
+.button:hover {
+  opacity: 0.88;
+}
