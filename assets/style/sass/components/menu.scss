@@ -215,6 +215,29 @@
   transition: all 600ms;
 }
 
+.menu-button {
+  display: flex;
+  padding: 0px 48px 0px;
+  height: 50px;
+  border-radius: 25px;
+  justify-content: center;
+  align-items: center;
+  // color & font
+  font-family: "Roboto", "Arial";
+  font-size: 0.8em;
+  user-select: none;
+  color: white;
+  background: #ff79da;
+  background: -moz-linear-gradient(top, #ff79da 0%, #ff6ef6 0%, #9356dc 100%);
+  background: -webkit-linear-gradient(
+    top,
+    #ff79da 0%,
+    #ff6ef6 0%,
+    #9356dc 100%
+  );
+  background: linear-gradient(to bottom, #ff79da 0%, #ff6ef6 0%, #9356dc 100%);
+}
+
 // animation greencheckbox
 #checkmenu1,
 #checkmenu2,
