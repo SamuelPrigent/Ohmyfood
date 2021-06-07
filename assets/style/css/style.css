@@ -884,7 +884,6 @@ body {
 }
 @keyframes loading-rotate {
   0% {
-    transform: rotate(0deg);
     border: solid 5px #9356dc;
     transform: translatey(-30%);
     animation-timing-function: ease-in;
@@ -894,7 +893,6 @@ body {
     animation-timing-function: ease-out;
   }
   50% {
-    transform: rotate(180deg);
     border: solid 5px #99e2d0;
     transform: translatey(-30%);
     animation-timing-function: ease-in;
@@ -904,7 +902,6 @@ body {
     animation-timing-function: ease-out;
   }
   100% {
-    transform: rotate(360deg);
     border: solid 5px #9356dc;
     transform: translatey(-30%);
     animation-timing-function: ease-in;

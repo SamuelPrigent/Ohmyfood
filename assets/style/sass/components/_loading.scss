@@ -58,7 +58,6 @@
 // rotate du spinner pendant l'animation
 @keyframes loading-rotate {
   0% {
-    transform: rotate(0deg);
     border: solid 5px $primaire;
     transform: translatey(-30%);
     animation-timing-function: ease-in;
@@ -69,7 +68,6 @@
   }
 
   50% {
-    transform: rotate(180deg);
     border: solid 5px $tertiaire;
     transform: translatey(-30%);
     animation-timing-function: ease-in;
@@ -79,7 +77,6 @@
     animation-timing-function: ease-out;
   }
   100% {
-    transform: rotate(360deg);
     border: solid 5px $primaire;
     transform: translatey(-30%);
     animation-timing-function: ease-in;
