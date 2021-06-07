@@ -854,6 +854,8 @@ body {
   border: solid 4px #9356dc;
   animation: loading-rotate 1500ms infinite;
   animation-fill-mode: both;
+  position: relative;
+  bottom: 13px;
 }
 
 .loading-icon {
