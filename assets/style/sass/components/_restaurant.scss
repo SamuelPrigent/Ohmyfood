@@ -140,13 +140,13 @@
   0% {
     font-size: 1em;
   }
-  70% {
+  80% {
     font-size: 1.3em;
     animation: ease-in-out;
   }
   100% {
     font-size: 1em;
-    animation: ease-out;
+    animation: linear;
   }
 }
 

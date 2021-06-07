@@ -1,0 +1,107 @@
+// Les div statiques
+.loading_container {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: inset 0px 7px 16px -16px #000000;
+  box-shadow: inset 0px 7px 16px -16px #000000;
+  // animation : disparition du container
+  height: calc(100vh - 50px);
+  animation-name: loading-opacity;
+  animation-duration: 3000ms;
+  animation-fill-mode: both;
+}
+
+// Visuel du bloc animé
+.loading_bloc {
+  display: flex;
+  height: 60px;
+  width: 60px;
+  border: solid 4px $primaire;
+  // animation : rotation du bloc
+  animation: loading-rotate 1500ms infinite;
+  animation-fill-mode: both;
+}
+
+.loading-icon {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: $secondaire;
+}
+
+// Animations du spinner
+
+// disparition du spinner après l'animations
+@keyframes loading-opacity {
+  0% {
+    height: calc(100vh - 50px);
+    opacity: 1;
+  }
+  99% {
+    height: calc(100vh - 50px);
+    opacity: 1;
+  }
+  100% {
+    height: 0;
+    opacity: 0;
+  }
+}
+
+// rotate du spinner pendant l'animation
+@keyframes loading-rotate {
+  0% {
+    transform: rotate(0deg);
+    border: solid 5px $primaire;
+    transform: translatey(-30%);
+    animation-timing-function: ease-in;
+  }
+  25% {
+    transform: translatey(0%);
+    animation-timing-function: ease-out;
+  }
+
+  50% {
+    transform: rotate(180deg);
+    border: solid 5px $tertiaire;
+    transform: translatey(-30%);
+    animation-timing-function: ease-in;
+  }
+  75% {
+    transform: translatey(0%);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: rotate(360deg);
+    border: solid 5px $primaire;
+    transform: translatey(-30%);
+    animation-timing-function: ease-in;
+  }
+}
+
+// Animations de main
+.loading_main {
+  animation-name: loadingmain;
+  animation-duration: 3000ms;
+  animation-fill-mode: both;
+}
+
+@keyframes loadingmain {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  99% {
+    height: 0;
+    opacity: 0;
+  }
+  100% {
+    height: auto;
+    opacity: 1;
+  }
+}

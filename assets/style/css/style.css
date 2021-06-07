@@ -463,13 +463,13 @@ body {
   0% {
     font-size: 1em;
   }
-  70% {
+  80% {
     font-size: 1.3em;
     animation: ease-in-out;
   }
   100% {
     font-size: 1em;
-    animation: ease-out;
+    animation: linear;
   }
 }
 @media screen and (min-width: 670px) {
@@ -833,35 +833,99 @@ body {
   opacity: 0.88;
 }
 
-.apparition-main {
-  animation-name: apparition-main;
-  animation-duration: 900ms;
+.loading_container {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: inset 0px 7px 16px -16px #000000;
+  box-shadow: inset 0px 7px 16px -16px #000000;
+  height: calc(100vh - 50px);
+  animation-name: loading-opacity;
+  animation-duration: 3000ms;
   animation-fill-mode: both;
 }
 
-@keyframes apparition-main {
+.loading_bloc {
+  display: flex;
+  height: 60px;
+  width: 60px;
+  border: solid 4px #9356dc;
+  animation: loading-rotate 1500ms infinite;
+  animation-fill-mode: both;
+}
+
+.loading-icon {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #ff79da;
+}
+
+@keyframes loading-opacity {
   0% {
-    display: none;
+    height: calc(100vh - 50px);
+    opacity: 1;
   }
   99% {
-    display: none;
+    height: calc(100vh - 50px);
+    opacity: 1;
   }
   100% {
-    display: initial;
+    height: 0;
+    opacity: 0;
   }
 }
-.loading-spinner {
-  animation-name: loading-spinner;
-  animation-duration: 900ms;
-  animation-fill-mode: both;
-}
-
-@keyframes loading-spinner {
+@keyframes loading-rotate {
   0% {
     transform: rotate(0deg);
+    border: solid 5px #9356dc;
+    transform: translatey(-30%);
+    animation-timing-function: ease-in;
+  }
+  25% {
+    transform: translatey(0%);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: rotate(180deg);
+    border: solid 5px #99e2d0;
+    transform: translatey(-30%);
+    animation-timing-function: ease-in;
+  }
+  75% {
+    transform: translatey(0%);
+    animation-timing-function: ease-out;
   }
   100% {
     transform: rotate(360deg);
+    border: solid 5px #9356dc;
+    transform: translatey(-30%);
+    animation-timing-function: ease-in;
+  }
+}
+.loading_main {
+  animation-name: loadingmain;
+  animation-duration: 3000ms;
+  animation-fill-mode: both;
+}
+
+@keyframes loadingmain {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  99% {
+    height: 0;
+    opacity: 0;
+  }
+  100% {
+    height: auto;
+    opacity: 1;
   }
 }
 
