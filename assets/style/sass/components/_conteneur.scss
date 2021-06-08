@@ -101,7 +101,12 @@
   margin: auto;
   background-color: $grey;
   border-radius: 0px;
-  border: 0px solid blue;
+}
+
+.conteneur-menu-head-zero {
+  width: 100%;
+  -webkit-box-shadow: inset 0px 7px 16px -16px #000000;
+  box-shadow: inset 0px 7px 16px -16px #000000;
 }
 
 .conteneur-menu {

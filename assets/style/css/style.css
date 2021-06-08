@@ -168,7 +168,12 @@ body {
   margin: auto;
   background-color: #f6f6f6;
   border-radius: 0px;
-  border: 0px solid blue;
+}
+
+.conteneur-menu-head-zero {
+  width: 100%;
+  -webkit-box-shadow: inset 0px 7px 16px -16px #000000;
+  box-shadow: inset 0px 7px 16px -16px #000000;
 }
 
 .conteneur-menu {
@@ -456,7 +461,7 @@ body {
 .checkfavclass:checked + .change-icon > .heartcolor2 {
   display: initial;
   animation: bump;
-  animation-duration: 350ms;
+  animation-duration: 300ms;
 }
 
 @keyframes bump {
@@ -843,7 +848,7 @@ body {
   box-shadow: inset 0px 7px 16px -16px #000000;
   height: calc(100vh - 50px);
   animation-name: loading-opacity;
-  animation-duration: 3000ms;
+  animation-duration: 2500ms;
   animation-fill-mode: both;
 }
 
@@ -852,7 +857,7 @@ body {
   height: 60px;
   width: 60px;
   border: solid 4px #9356dc;
-  animation: loading-rotate 1500ms infinite;
+  animation: loading-bounce 1550ms infinite;
   animation-fill-mode: both;
   position: relative;
   bottom: 12px;
@@ -882,34 +887,34 @@ body {
     opacity: 0;
   }
 }
-@keyframes loading-rotate {
+@keyframes loading-bounce {
   0% {
     border: solid 5px #9356dc;
     transform: translatey(-30%);
-    animation-timing-function: ease-in;
+    animation-timing-function: cubic-bezier(0.49, 0, 1, 0.53);
   }
   25% {
     transform: translatey(0%);
-    animation-timing-function: ease-out;
+    animation-timing-function: cubic-bezier(0, 0.57, 0.6, 0.99);
   }
   50% {
     border: solid 5px #99e2d0;
     transform: translatey(-30%);
-    animation-timing-function: ease-in;
+    animation-timing-function: cubic-bezier(0.49, 0, 1, 0.53);
   }
   75% {
     transform: translatey(0%);
-    animation-timing-function: ease-out;
+    animation-timing-function: cubic-bezier(0, 0.57, 0.6, 0.99);
   }
   100% {
     border: solid 5px #9356dc;
     transform: translatey(-30%);
-    animation-timing-function: ease-in;
+    animation-timing-function: cubic-bezier(0.49, 0, 1, 0.53);
   }
 }
 .loading_main {
   animation-name: loadingmain;
-  animation-duration: 3000ms;
+  animation-duration: 2500ms;
   animation-fill-mode: both;
 }
 

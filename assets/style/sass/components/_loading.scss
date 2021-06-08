@@ -10,7 +10,7 @@
   // animation : disparition du container
   height: calc(100vh - 50px);
   animation-name: loading-opacity;
-  animation-duration: 3000ms;
+  animation-duration: 2500ms;
   animation-fill-mode: both;
 }
 
@@ -21,7 +21,7 @@
   width: 60px;
   border: solid 4px $primaire;
   // animation : rotation du bloc
-  animation: loading-rotate 1500ms infinite;
+  animation: loading-bounce 1550ms infinite;
   animation-fill-mode: both;
   position: relative;
   bottom: 12px;
@@ -56,37 +56,37 @@
 }
 
 // rotate du spinner pendant l'animation
-@keyframes loading-rotate {
+@keyframes loading-bounce {
   0% {
     border: solid 5px $primaire;
     transform: translatey(-30%);
-    animation-timing-function: ease-in;
+    animation-timing-function: cubic-bezier(0.49, 0, 1, 0.53);
   }
   25% {
     transform: translatey(0%);
-    animation-timing-function: ease-out;
+    animation-timing-function: cubic-bezier(0, 0.57, 0.6, 0.99);
   }
 
   50% {
     border: solid 5px $tertiaire;
     transform: translatey(-30%);
-    animation-timing-function: ease-in;
+    animation-timing-function: cubic-bezier(0.49, 0, 1, 0.53);
   }
   75% {
     transform: translatey(0%);
-    animation-timing-function: ease-out;
+    animation-timing-function: cubic-bezier(0, 0.57, 0.6, 0.99);
   }
   100% {
     border: solid 5px $primaire;
     transform: translatey(-30%);
-    animation-timing-function: ease-in;
+    animation-timing-function: cubic-bezier(0.49, 0, 1, 0.53);
   }
 }
 
 // Animations de main
 .loading_main {
   animation-name: loadingmain;
-  animation-duration: 3000ms;
+  animation-duration: 2500ms;
   animation-fill-mode: both;
 }
 
