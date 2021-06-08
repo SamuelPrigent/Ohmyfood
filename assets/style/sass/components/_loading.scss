@@ -24,7 +24,7 @@
   animation: loading-bounce 1550ms infinite;
   animation-fill-mode: both;
   position: relative;
-  bottom: 35px;
+  bottom: 28px;
 }
 
 .loading-icon {
@@ -59,7 +59,7 @@
 // rotate du spinner pendant l'animation
 @keyframes loading-bounce {
   0% {
-    transform: translatey(-27%);
+    transform: translatey(-30%);
     animation-timing-function: cubic-bezier(0.49, 0, 1, 0.53);
   }
   25% {
@@ -68,7 +68,7 @@
   }
 
   50% {
-    transform: translatey(-27%);
+    transform: translatey(-30%);
     animation-timing-function: cubic-bezier(0.49, 0, 1, 0.53);
   }
   75% {
@@ -76,7 +76,7 @@
     animation-timing-function: cubic-bezier(0, 0.57, 0.6, 0.99);
   }
   100% {
-    transform: translatey(-27%);
+    transform: translatey(-30%);
     animation-timing-function: cubic-bezier(0.49, 0, 1, 0.53);
   }
 }
