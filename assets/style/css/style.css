@@ -854,9 +854,9 @@ body {
 
 .loading_bloc {
   display: flex;
-  height: 66.5px;
-  width: 66.5px;
-  border-radius: 15%;
+  height: 66px;
+  width: 66px;
+  border-radius: 14%;
   overflow: hidden;
   animation: loading-bounce 1550ms infinite;
   animation-fill-mode: both;
