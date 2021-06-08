@@ -8,7 +8,7 @@
   -webkit-box-shadow: inset 0px 7px 16px -16px #000000;
   box-shadow: inset 0px 7px 16px -16px #000000;
   // animation : disparition du container
-  height: calc(100vh - 50px);
+  height: calc(100vh - 110px);
   animation-name: loading-opacity;
   animation-duration: 2500ms;
   animation-fill-mode: both;
@@ -24,7 +24,7 @@
   animation: loading-bounce 1550ms infinite;
   animation-fill-mode: both;
   position: relative;
-  bottom: 27px;
+  bottom: 24px;
 }
 
 .loading-icon {
@@ -43,11 +43,11 @@
 // disparition du spinner après l'animations
 @keyframes loading-opacity {
   0% {
-    height: calc(100vh - 50px);
+    height: calc(100vh - 110px);
     opacity: 1;
   }
   99% {
-    height: calc(100vh - 50px);
+    height: calc(100vh - 110px);
     opacity: 1;
   }
   100% {
