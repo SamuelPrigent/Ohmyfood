@@ -10,7 +10,7 @@
   // animation : disparition du container
   height: calc(100vh - 110px);
   animation-name: loading-opacity;
-  animation-duration: 2500ms;
+  animation-duration: 2550ms;
   animation-fill-mode: both;
 }
 
@@ -21,7 +21,7 @@
   width: 64px;
   border-radius: 15%;
   overflow: hidden;
-  animation: loading-bounce 1550ms infinite;
+  animation: loading-bounce 1600ms infinite;
   animation-fill-mode: both;
   position: relative;
   bottom: 20px;
@@ -84,7 +84,7 @@
 // Animations de main
 .loading_main {
   animation-name: loadingmain;
-  animation-duration: 2500ms;
+  animation-duration: 2550ms;
   animation-fill-mode: both;
 }
 
