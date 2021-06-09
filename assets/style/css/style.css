@@ -895,7 +895,7 @@ body {
 @keyframes loading-bounce {
   0% {
     transform: translatey(-24%);
-    animation-timing-function: cubic-bezier(0.23, 0, 0.97, 0.37);
+    animation-timing-function: cubic-bezier(0.41, 0.01, 1, 0.67);
   }
   25% {
     transform: translatey(0%);
@@ -903,7 +903,7 @@ body {
   }
   50% {
     transform: translatey(-24%);
-    animation-timing-function: cubic-bezier(0.23, 0, 0.97, 0.37);
+    animation-timing-function: cubic-bezier(0.41, 0.01, 1, 0.67);
   }
   75% {
     transform: translatey(0%);
@@ -911,7 +911,7 @@ body {
   }
   100% {
     transform: translatey(-24%);
-    animation-timing-function: cubic-bezier(0.23, 0, 0.97, 0.37);
+    animation-timing-function: cubic-bezier(0.41, 0.01, 1, 0.67);
   }
 }
 .loading_main {
