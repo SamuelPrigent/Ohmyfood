@@ -142,6 +142,10 @@ input:focus {
   outline: 0px solid #0400ff;
 }
 
+button:active {
+  -webkit-tap-highlight-color: transparent;
+}
+
 /*
 input {
   border: 1px solid grey;
