@@ -451,14 +451,10 @@ body {
   color: #000000;
 }
 
-.checkfavclass {
+.checkfavclass:hover .change-icon > .heartcolor {
   display: none;
 }
-
-.checkfavclass:checked + .change-icon > .heartcolor {
-  display: none;
-}
-.checkfavclass:checked + .change-icon > .heartcolor2 {
+.checkfavclass:hover .change-icon > .heartcolor2 {
   display: initial;
   animation: bump;
   animation-duration: 300ms;
@@ -692,17 +688,14 @@ body {
   border: 0px solid blue;
 }
 
-.checkmenu {
-  display: none;
-}
-.checkmenu:checked + .greencheckslide {
+.checkmenu:hover .greencheckslide {
   background-color: #99e2d0;
   width: 60px;
   min-width: 60px;
   transition: all 600ms;
   transition-timing-function: ease-in-out;
 }
-.checkmenu:checked + .greencheckslide > .greencheckslide-icon {
+.checkmenu:hover .greencheckslide > .greencheckslide-icon {
   transform: rotate(0deg);
   left: 0px;
   transition: all 600ms;

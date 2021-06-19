@@ -210,11 +210,9 @@
 
 // Animation greencheckbox
 .checkmenu {
-  display: none;
-
-  &:checked {
+  &:hover {
     // animation de la boite verte
-    & + .greencheckslide {
+    & .greencheckslide {
       background-color: $tertiaire;
       width: 60px;
       min-width: 60px;
@@ -222,7 +220,7 @@
       transition-timing-function: ease-in-out;
     }
     // animation de l'icone de la boite verte
-    & + .greencheckslide > .greencheckslide-icon {
+    & .greencheckslide > .greencheckslide-icon {
       transform: rotate(0deg);
       left: 0px;
       transition: all 600ms;

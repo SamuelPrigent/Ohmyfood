@@ -121,15 +121,12 @@
 }
 
 // animation coeur
-.checkfavclass {
-  display: none;
-}
 
 .checkfavclass {
-  &:checked + .change-icon > .heartcolor {
+  &:hover .change-icon > .heartcolor {
     display: none;
   }
-  &:checked + .change-icon > .heartcolor2 {
+  &:hover .change-icon > .heartcolor2 {
     display: initial;
     animation: bump;
     animation-duration: 300ms;
