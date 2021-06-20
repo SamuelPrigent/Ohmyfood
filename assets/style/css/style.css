@@ -343,8 +343,8 @@ body {
   margin-bottom: 30px;
 }
 .restaurant_bloc .restaurant_card {
-  display: grid;
-  display: column;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   text-align: left;
   background-color: white;
@@ -442,7 +442,6 @@ body {
   background: linear-gradient(to bottom, #ff6ef6 0%, #9356dc 100%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -477,7 +476,7 @@ body {
   .restaurant_bloc {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(auto, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     justify-content: space-between;
     align-items: center;
     gap: 18px;
@@ -505,7 +504,6 @@ body {
 }
 .menu-head_bloc .menu-head_card {
   display: grid;
-  display: column;
   width: 100%;
   text-align: left;
   background-color: white;
@@ -761,7 +759,6 @@ body {
   height: auto;
   flex: 1;
   min-width: 235px;
-  justify-content: column;
   margin-bottom: 10px;
   list-style-type: none;
   user-select: none;

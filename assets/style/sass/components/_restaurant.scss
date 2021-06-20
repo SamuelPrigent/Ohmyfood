@@ -9,8 +9,8 @@
   margin-bottom: 30px;
 
   .restaurant_card {
-    display: grid;
-    display: column;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     text-align: left;
     background-color: white;
@@ -153,7 +153,7 @@
   .restaurant_bloc {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(auto, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     justify-content: space-between;
     align-items: center;
     gap: 18px;
