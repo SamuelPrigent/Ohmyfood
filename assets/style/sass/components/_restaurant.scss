@@ -108,8 +108,11 @@
 }
 
 // div coeur 1 et 2
+
+// heart color 2
+// content: "<i class=" fas fa-heart ">2</i>";
+
 .heartcolor2 {
-  content: "<i class=" fas fa-heart ">2</i>";
   font-size: 1.2em;
   display: none;
   @include gradient-heart;

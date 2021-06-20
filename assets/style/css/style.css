@@ -434,7 +434,6 @@ body {
 }
 
 .heartcolor2 {
-  content: "<i class=" fas fa-heart ">2</i>";
   font-size: 1.2em;
   display: none;
   background: -moz-linear-gradient(top, #ff6ef6 0%, #9356dc 100%);
